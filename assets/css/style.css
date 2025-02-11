@@ -963,4 +963,275 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     text-transform: uppercase;
     letter-spacing: 4px;
 }
+/* ========== DARK MODE STYLES ========== */
+
+/* General Dark Mode Settings */
+.dark-mode {
+    --background-color: #121212;
+    --text-color: #ffffff;
+}
+
+/* Apply Dark Mode Colors */
+.dark-mode body {
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Fix Navbar in Dark Mode */
+.dark-mode .top-area,
+.dark-mode nav.navbar {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+}
+
+/* Fix All Sections in Dark Mode */
+.dark-mode .about,
+.dark-mode .education,
+.dark-mode .skills-section,
+.dark-mode .projects,
+.dark-mode .experience,
+.dark-mode .contact,
+.dark-mode .mission {
+    background-color: #222 !important;
+    color: #ffffff !important;
+}
+
+/* Fix Headings, Links, and Text */
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3, 
+.dark-mode h4, 
+.dark-mode h5, 
+.dark-mode h6 {
+    color: #ffffff !important;
+}
+
+.dark-mode p,
+.dark-mode a {
+    color: #dddddd !important;
+}
+
+/* ========== FIX EXPERIENCE & EDUCATION SECTIONS ========== */
+
+/* Fix Timeline Box Background */
+.dark-mode .experience-box,
+.dark-mode .education-box,
+.dark-mode .timeline-content {
+    background-color: #2a2a2a !important;
+    color: #ffffff !important;
+    border-radius: 8px;
+    padding: 15px;
+    position: relative;
+    z-index: 2; /* Ensures content is above the timeline line */
+}
+
+/* Fix Timeline Line Visibility */
+.dark-mode .experience .timeline::before,
+.dark-mode .experience-timeline::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    background-color: #ffffff !important; /* White Line in Dark Mode */
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+    z-index: -1; /* Moves line behind text */
+}
+
+/* Fix Timeline Dots */
+.dark-mode .timeline-dot,
+.dark-mode .single-timeline-horizontal span {
+    background-color: #b636ff !important; /* Highlight dot */
+    border: 2px solid #ffffff !important;
+    position: relative;
+    z-index: 1; /* Ensures dots are above the timeline */
+}
+
+/* Fix Hover Effect */
+.dark-mode .timeline-dot:hover {
+    background-color: #ffffff !important;
+    border-color: #b636ff !important;
+}
+
+/* Fix Timeline & Education Text */
+.dark-mode .timeline-content p,
+.dark-mode .experience-box p {
+    color: #ffffff !important;
+}
+
+/* ========== FIX OTHER SECTIONS ========== */
+
+/* Fix Project & Experience Timeline Text */
+.dark-mode .timeline-content,
+.dark-mode .single-timeline-horizontal p {
+    color: #ffffff !important;
+}
+
+/* Fix Mission Quote Box */
+.dark-mode .mission-quote {
+    background-color: #2a2a2a !important;
+    color: #ffffff !important;
+    border-left: 5px solid #673ab7 !important;
+}
+
+/* Fix Buttons in Dark Mode */
+.dark-mode .contact-btn,
+.dark-mode .custom-button {
+    background-color: #673ab7 !important;
+    color: #ffffff !important;
+}
+
+.dark-mode .contact-btn:hover,
+.dark-mode .custom-button:hover {
+    background-color: #4a148c !important;
+}
+
+/* Fix Footer (Copyright Section) in Dark Mode */
+.dark-mode .hm-footer-copyright {
+    background-color: #121212 !important;
+    color: #b3b3b3 !important;
+}
+
+/* Ensure Links & Text in Footer are Visible */
+.dark-mode .hm-footer-copyright p,
+.dark-mode .hm-footer-copyright a {
+    color: #ffffff !important;
+}
+
+.dark-mode .hm-footer-copyright a:hover {
+    color: #b636ff !important;
+}
+
+/* ========== FIX PROJECTS SECTION IN DARK MODE ========== */
+
+/* Fix Projects Section */
+.dark-mode .projects,
+.dark-mode .portfolio,
+.dark-mode .projects-container {
+    background-color: #222 !important;
+    color: #ffffff !important;
+}
+
+/* Fix Project Title */
+.dark-mode .projects h2 {
+    color: #ffffff !important;
+}
+
+/* Fix Project Cards */
+.dark-mode .projects .item,
+.dark-mode .projects .portfolio-content,
+.dark-mode .projects .project-card {
+    background-color: #2a2a2a !important;
+    color: #ffffff !important;
+    border-radius: 10px;
+}
+
+/* Fix Project Images & Containers */
+.dark-mode .projects img {
+    filter: brightness(85%);
+}
+
+/* Fix Portfolio Image Overlay */
+.dark-mode .isotope-overlay,
+.dark-mode .projects .overlay {
+    background: rgba(31, 44, 108, 0.8) !important;
+}
+
+/* Fix Explore More Button */
+.dark-mode .projects .explore-btn {
+    background-color: #673ab7 !important;
+    color: #ffffff !important;
+}
+
+.dark-mode .projects .explore-btn:hover {
+    background-color: #4a148c !important;
+}
+
+/* Toggle Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Slider Track */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 30px;
+}
+
+/* Moving Slider Button */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+/* Sun & Moon Icons */
+.slider i {
+    position: absolute;
+    font-size: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Sun (Light Mode) */
+#sun-icon {
+    left: 8px;
+    color: #ffcc00;
+    opacity: 1;
+}
+
+/* Moon (Dark Mode) */
+#moon-icon {
+    right: 8px;
+    color: #0e0e0e;
+    opacity: 0;
+}
+
+/* Toggle to Dark Mode */
+input:checked + .slider {
+    background-color: #673ab7;
+}
+
+input:checked + .slider:before {
+    transform: translateX(30px);
+}
+
+/* Hide Sun, Show Moon */
+input:checked + .slider #sun-icon {
+    opacity: 0;
+}
+
+input:checked + .slider #moon-icon {
+    opacity: 1;
+}
+
+
+
+
+
 /*========================Thank you=================

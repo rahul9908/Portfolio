@@ -126,6 +126,48 @@ $(document).ready(function(){
 });	
 	
 
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleSwitch = document.getElementById("theme-toggle");
+    const body = document.body;
+    const sunIcon = document.getElementById("sun-icon");
+    const moonIcon = document.getElementById("moon-icon");
+
+    if (!toggleSwitch || !sunIcon || !moonIcon) {
+        console.error("Toggle switch or icons not found!");
+        return;
+    }
+
+    // Apply saved theme
+    if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("dark-mode");
+        toggleSwitch.checked = true;
+        sunIcon.style.opacity = "0";
+        moonIcon.style.opacity = "1";
+    } else {
+        body.classList.remove("dark-mode");
+        toggleSwitch.checked = false;
+        sunIcon.style.opacity = "1";
+        moonIcon.style.opacity = "0";
+    }
+
+    // Toggle Dark Mode
+    toggleSwitch.addEventListener("change", function () {
+        if (toggleSwitch.checked) {
+            body.classList.add("dark-mode");
+            localStorage.setItem("theme", "dark");
+            sunIcon.style.opacity = "0";
+            moonIcon.style.opacity = "1";
+        } else {
+            body.classList.remove("dark-mode");
+            localStorage.setItem("theme", "light");
+            sunIcon.style.opacity = "1";
+            moonIcon.style.opacity = "0";
+        }
+    });
+});
+
+
+
 var options = {
 	strings: ["Data Scientist", "Machine Learning Engineer"],
 	typeSpeed: 50,
