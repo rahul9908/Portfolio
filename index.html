@@ -100,7 +100,7 @@
 			                    <li class="smooth-menu"><a href="#experience">experience</a></li>
 								<li class=" smooth-menu"><a href="#education">education</a></li>
 			                    <li class="smooth-menu"><a href="#portfolio">projects</a></li>
-								<li class="smooth-menu"><a href="#skills">skills</a></li>
+								<!-- <li class="smooth-menu"><a href="#skills">skills</a></li>-->
 			                    <!-- <li class="smooth-menu"><a href="#clients">softwares</a></li> -->
 			                    <li class="smooth-menu"><a href="#contact">contact</a></li>
 								<li class="theme-toggle">
@@ -250,460 +250,293 @@
 
 
 		<!--experience start -->
-		<section id="experience" class="experience">
-			<div class="section-heading text-center">
-				<h2>experience</h2>
-			</div>
-			<div class="container">
-				<div class="experience-content">
-						<div class="main-timeline">
-							<ul>
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-5">
-												<div class="experience-time text-right">
-													<h2>2025 - Present</h2>
-													<h3>Research Assistant</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5">
-												<div class="timeline">
-													<div class="timeline-content">
-														<h4 class="title">
-															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-															Clarkson university
-														</h4>
-														<h5>Potdam, NY, USA<h5> 
-														<p class="description"> 
-															As a research analyst, I work on analyzing large healthcare datasets from Nemesis which contain EMS(Emergency medical services) rocords of each case recieved , specifically focusing on optimizing medical response times. By leveraging advanced data analysis and machine learning techniques, I identify key predictive factors that impact response times, aiming for efficient interventions under 10 minutes.
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
+		<!--experience start -->
+<section id="experience" class="experience">
+    <div class="section-heading text-center">
+        <h2>experience</h2>
+    </div>
+    <div class="container">
+        <div class="experience-content">
+            
+            <!-- I4DI Internship -->
+            <div class="experience-card">
+                <h3 class="job-title">AI and Data Science Intern</h3>
+                <h4 class="company-name">I4DI - Institute for Development Impact</h4>
+                <p class="job-location">Washington, DC</p>
+                <p class="job-duration">May 2025 – Aug 2025</p>
+                <ul class="job-description">
+                    <li>Designed secure file upload system using <strong>Django, LangChain, FAISS</strong> supporting 5 files/session with automatic cleanup</li>
+                    <li>Built embedding pipelines enabling <strong>sub-second semantic search</strong> across 10K+ documents with <strong>50% faster retrieval</strong></li>
+                    <li>Developed AI survey system with <strong>Mistral 7B LLM</strong> reducing manual effort by <strong>70%</strong></li>
+                    <li>Integrated AI pipeline into Rails app using <strong>FastAPI</strong> for automated survey creation</li>
+                </ul>
+            </div>
 
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-offset-1 col-md-5 experience-time-responsive">
-												<div class="experience-time">
-													<h2>
-														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-													</h2>
-													<h3>Assosiate Engineer<h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-5">
-												<div class="timeline">
-													<div class="timeline-content text-right">
-														<h4 class="title">
-															Cognizant Technology Solutions
-														</h4>
-														<h5>Hyderbad, India <h5>
-														<p class="description">
-															In my role, I have optimized and engineered high-performance cloud-based applications to enhance reliability and user experience for leading company in the pharmaceutical industry. I have focused on designing interactive dashboards that deliver real-time insights, helping improve decision-making and visibility into key metrics. I also worked on improving database and stored procedure performance, ensuring faster execution and response times, while maintaining data integrity through regular system analyses. Additionally, I conduct detailed daily data analysis to ensure the accuracy of system records and smooth operations.
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5 experience-time-main">
-												<div class="experience-time">
-													<h2>
-														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														2021 - 2024
-													</h2>
-													<h3> Associate Enginner</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
+            <!-- Research Assistant - Project 1 -->
+            <div class="experience-card">
+                <h3 class="job-title">Research Assistant</h3>
+                <h4 class="company-name">Clarkson University</h4>
+                <p class="job-location">Potsdam, NY</p>
+                <p class="job-duration">May 2025 – Sep 2025</p>
+                <ul class="job-description">
+                    <li>Analyzed <strong>20M+ emergency medical records</strong> using ML to identify stroke-related 911 response delays</li>
+                    <li>Cleaned healthcare data resolving <strong>1M+ missing values</strong> with <strong>95% data integrity</strong></li>
+                    <li>Engineered <strong>70+ features</strong> and extracted <strong>15 top predictors</strong> for EMS response time</li>
+                    <li>Built ML models (Random Forest, XGBoost, SVM) achieving <strong>20% accuracy boost</strong></li>
+                </ul>
+            </div>
 
-															
-							</ul>
-						</div><!--.main-timeline-->
-					</div><!--.experience-content-->
-			</div>
+            <!-- Research Assistant - Project 2 -->
+            <div class="experience-card">
+                <h3 class="job-title">Research Assistant - NLP Project</h3>
+                <h4 class="company-name">Clarkson University</h4>
+                <p class="job-location">Potsdam, NY</p>
+                <p class="job-duration">Jan 2025 – May 2025</p>
+                <ul class="job-description">
+                    <li>Implemented scalable <strong>NLP pipeline</strong> producing dataset with <strong>300+ unique entities</strong></li>
+                    <li>Built data processing workflow using <strong>Pandas & spaCy</strong> for ML-ready text data</li>
+                    <li>Designed dashboards with <strong>R, Matplotlib, Seaborn</strong> revealing biodiversity patterns</li>
+                </ul>
+            </div>
 
-		</section><!--/.experience-->
+            <!-- Graduate Teaching Assistant -->
+            <div class="experience-card">
+                <h3 class="job-title">Graduate Teaching Assistant</h3>
+                <h4 class="company-name">Clarkson University</h4>
+                <p class="job-location">Potsdam, NY</p>
+                <p class="job-duration">Aug 2024 – Present</p>
+                <ul class="job-description">
+                    <li>Teaching <strong>Probability & Statistics</strong> course for <strong>50+ graduate students</strong></li>
+                    <li>Guided students in statistical methods: <strong>ANOVA, Chi-Square, Regression, Hypothesis Testing</strong></li>
+                    <li>Conducted office hours and review sessions improving course outcomes</li>
+                </ul>
+            </div>
+
+            <!-- Cognizant -->
+            <div class="experience-card">
+                <h3 class="job-title">Associate Engineer</h3>
+                <h4 class="company-name">Cognizant Technology Solutions</h4>
+                <p class="job-location">Hyderabad, India</p>
+                <p class="job-duration">Oct 2021 – Aug 2024</p>
+                <ul class="job-description">
+                    <li>Built scalable solutions processing <strong>1M+ transactions</strong> with <strong>20% speed increase</strong></li>
+                    <li>Created real-time dashboards for data-driven business insights</li>
+                    <li>Optimized <strong>SQL ETL pipelines</strong> improving retrieval speed by <strong>30%</strong></li>
+                    <li>Automated data processing for <strong>500+ daily records</strong> achieving <strong>98% accuracy</strong></li>
+                </ul>
+            </div>
+
+        </div><!--/.experience-content-->
+    </div><!--/.container-->
+</section><!--/.experience-->
+<!--experience end -->
 		<!--experience end -->
+
+		
 		<!-- Education Section -->
 <section id="education" class="education">
     <div class="section-heading text-center">
         <h2>education</h2>
     </div>
     <div class="container">
-        <div class="education-horizontal-timeline">
-            <div class="row justify-content-center">
-                <div class="col-sm-4">
-                    <div class="single-horizontal-timeline">
-                        <div class="experience-time text-center">
-                            <h2>Aug 2024 - Present</h2>
-                            <h3>Master <span>of </span>Science in<br>Applied data science</h3>
-                        </div><!--/.experience-time-->
-                        <div class="timeline-horizontal-border text-center">
-                            <i class="fa fa-circle" aria-hidden="true"></i>
-                            <span class="single-timeline-horizontal"></span>
-                        </div>
-                        <div class="timeline text-center">
-                            <div class="timeline-content">
-                                <h4 class="title">Clarkson university</h4>
-                                <h5>Potsdam, NY-USA</h5>
-                                <p class="description">
-									This program provided me with comprehensive knowledge and hands-on experience in various aspects of Data Science in  Machine Learning, Data Mining , Database Modeling , Data mining , Data warehousing , Information Visualization and statistics. and key skiils such as problem solving and critical thinking.
-								</p>
-                            </div><!--/.timeline-content-->
-                        </div><!--/.timeline-->
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="single-horizontal-timeline">
-                        <div class="experience-time text-center">
-                            <h2>May 2017 -June 2021</h2>
-                            <h3>Bachelor <span>of </span>technology in <br>Computer Science Engineering</h3>
-                        </div><!--/.experience-time-->
-                        <div class="timeline-horizontal-border text-center">
-                            <i class="fa fa-circle" aria-hidden="true"></i>
-                            <span class="single-timeline-horizontal"></span>
-                        </div>
-                        <div class="timeline text-center">
-                            <div class="timeline-content">
-                                <h4 class="title">Amrita School of Engineering</h4>
-                                <h5>Kollam, Kerala-India</h5>
-                                <p class="description">
-									This program equipped me with a solid foundation in essential aspects of Computer Science.My passion for coding was ignited here, particularly through hands-on experience in Python, Data Structures,Algorthms my intrest in machinelearning.Additionally, I honed my analytical, leadership, and communication skills, which have been invaluable in my professional journey.
-								</p>
-                            </div><!--/.timeline-content-->
-                        </div><!--/.timeline-->
-                    </div>
-                </div>
-				<!---->
-				<div class="col-sm-4">
-                    <div class="single-horizontal-timeline">
-                        <div class="experience-time text-center">
-                            <h2>April 2015- April 2017</h2>
-                            <h3>High School <span>With</span><br>  Maths , Physics and Chemistry</h3>
-                        </div><!--/.experience-time-->
-                        <div class="timeline-horizontal-border text-center">
-                            <i class="fa fa-circle" aria-hidden="true"></i> 
-                            <span class="single-timeline-horizontal"></span>
-                        </div>
-                        <div class="timeline text-center">
-                            <div class="timeline-content">
-                                <h4 class="title"> Sri Chaithanya Jr College</h4>
-                                <h5> Hyderbad, India</h5>
-                                <p class="description">
-									During my high school years, I pursued Maths, Physics and Chemistry , which allowed be to understand my strenghts and layed a ground work for my computer science and data science journey.
-								</p>
-                            </div><!--/.timeline-content-->
-                        </div><!--/.timeline-->
-                    </div>
+        <div class="education-content">
+            
+            <!-- Master's Degree -->
+            <div class="education-card">
+                <h3 class="degree-title">Master of Science in Applied Data Science</h3>
+                <h4 class="university-name">Clarkson University</h4>
+                <p class="education-location">Potsdam, NY</p>
+                <p class="education-duration">Aug 2024 – May 2026</p>
+                <p class="gpa"><strong>GPA:</strong> 3.8/4.0</p>
+                <div class="education-details">
+                    <p><strong>Coursework:</strong> Machine Learning, Data Mining, Natural Language Processing, Big Data and Cloud Technologies, Data Warehousing, Information Visualization, Database Modeling, Probability Statistics, Strategic Project Management</p>
                 </div>
             </div>
-        </div>
-    </div>
+
+            <!-- Bachelor's Degree -->
+            <div class="education-card">
+                <h3 class="degree-title">Bachelor of Technology in Computer Science Engineering</h3>
+                <h4 class="university-name">Amrita Vishwa Vidyapeetham</h4>
+                <p class="education-location">Kerala, India</p>
+                <p class="education-duration">May 2017 – Jun 2021</p>
+                <div class="education-details">
+                    <p><strong>Coursework:</strong> Data Structures, Algorithms, Operating Systems, System Design, DBMS, Software Engineering, App Development</p>
+                </div>
+            </div>
+
+        </div><!--/.education-content-->
+    </div><!--/.container-->
 </section><!--/.education-->
-
 		
 		
 
-		<!--portfolio start -->
-		<section id="portfolio" class="portfolio">
-			<div class="portfolio-details">
-				<div class="section-heading text-center">
-					<h2>projects</h2> 
-</div>
-<div class="container">
-    <div class="portfolio-content">
-        <div class="isotope">
-           <!-- Row 1 -->
-<div class="row">
-    <!-- News Scraper -->
-    <div class="col-sm-4">
-        <div class="item">
-            <img src="assets/images/portfolio/News_Scraper.png" alt="portfolio image"/>
-            <div class="isotope-overlay">
-                <a href="https://newsscraper-ibusywqgfkhznrysyeh3js.streamlit.app/">
-                    News Scraper
-                </a>
-            </div> 
-        </div> 
-        <p><strong>[Transformers, Pandas, NewsAPI, DistilBERT, T5-small, Streamlit]</strong></p>
-        <p>This application collects and processes top US news articles daily using the NewsAPI. Each article is analyzed for sentiment using DistilBERT and summarized using the T5-small language model. The app presents an organized dashboard showing key stories, sentiment breakdown, and concise summaries to help users stay informed efficiently.</p>
+<!--portfolio start -->
+<section id="portfolio" class="portfolio">
+    <div class="section-heading text-center">
+        <h2>projects</h2>
     </div>
-
-    <!-- AI Research Paper Summarization -->
-    <div class="col-sm-4">
-        <div class="item">
-            <img src="assets/images/portfolio/Document.png" alt="portfolio image"/>
-            <div class="isotope-overlay">
-                <a href="https://ai-research-paper-summarizer-bddthsqmmgjugwk7w8wqy9.streamlit.app/">
-                    AI Research Paper Summarization
-                </a>
-            </div> 
-        </div> 
-        <p><strong>[pdfplumber, scikit-learn, Hugging Face Transformers (T5), PyTorch, Git, Streamlit]</strong></p>
-        <p>This project automates the summarization of academic papers by extracting raw text from full-length PDFs using pdfplumber, and generating two forms of summaries: extractive summaries using TextRank, and human-like abstracts using the T5 Transformer model. The system was evaluated using ROUGE-1 and ROUGE-2 scores to ensure quality. Built for use cases like literature reviews or topic exploration, it simplifies the interpretation of complex texts.</p>
-    </div>
-
-    <!-- US Accident Insights -->
-    <div class="col-sm-4">
-        <div class="item">
-            <img src="assets/images/portfolio/Accidents.png" alt="portfolio image"/>
-            <div class="isotope-overlay">
-                <a href="https://clarksonuniv.shinyapps.io/US-Accident-Insights-Rahul">
-                    US Accident Insights Shiny App
-                </a>
-            </div> 
-        </div> 
-        <p><strong>[dplyr, lubridate, ggplot2, RShiny]</strong></p>
-        <p>Interactive R Shiny dashboard analyzing 4.2M+ accident records in the US. Visualizes state-wise trends, weather impacts, and accident severity distributions.</p>
-    </div>
-</div>
-<br>
-
-<!-- Row 2 -->
-<div class="row">
-    <!-- Medical Chat Bot -->
-    <div class="col-sm-4">
-        <div class="item">
-            <img src="assets/images/portfolio/Medical.png" alt="portfolio image"/>
-            <div class="isotope-overlay">
-                <a href="https://github.com/rahul9908/Medical-Chatbot">
-                    Medical Chat Bot
-                </a>
-            </div> 
-        </div> 
-        <p><strong>[Python, Neo4j, Cypher Queries, RAG, GPT, spaCy, Streamlit]</strong></p>
-        <p>A hybrid chatbot designed to answer general and disease-specific medical queries. For structured queries (e.g., known diseases), the bot retrieves accurate responses from a Neo4j Knowledge Graph using Cypher queries. For broader or informal queries, it uses a GPT-2 language model to provide conversational responses. This ensures 0% hallucination when data is available in the knowledge base, while still handling general health discussions.</p>
-    </div>
-
-    <!-- Snow Depth Forecasting -->
-    <div class="col-sm-4">
-        <div class="item">
-            <img src="assets/images/portfolio/Timeseries.png" alt="portfolio image"/>
-            <div class="isotope-overlay">
-                <a href="https://github.com/rahul9908/Timeseries-Analysis-Tupperlake">
-                    Snow Depth Forecasting
-                </a>
-            </div> 
-        </div> 
-        <p><strong>[Python, ARIMA, AutoARIMA, HoltWinters]</strong></p>
-        <p>Built for Tupper Lake, NY, this forecasting tool uses time series models — ARIMA, AutoARIMA, and Holt-Winters — to predict snow depth for the 2026 winter season. Historical weather and snowfall data were analyzed to select the most accurate forecasting method. The final system compares predictions across models and selects the best fit based on error metrics. Technologies: statsmodels, pandas, matplotlib.</p>
-    </div>
-
-    <!-- Personalized Course Recommendation System -->
-    <div class="col-sm-4">
-        <div class="item">
-            <img src="assets/images/portfolio/Courses.jpg" alt="portfolio image"/>
-            <div class="isotope-overlay">
-                <a href="https://github.com/rahul9908/-Personalized-Course-Recommendation-Database-System">
-                    Personalized Course Recommendation System
-                </a>
-            </div> 
-        </div> 
-        <p><strong>[SQL]</strong></p>
-        <p>A SQL-based academic planning system built to optimize course recommendations for students while balancing instructor loads and avoiding scheduling conflicts. It uses triggers, stored procedures, and performance history to simulate how real universities handle course enrollment and scheduling.</p>
-    </div>
-</div>
-<br>
-
-<!-- Row 3 -->
-<div class="row">
-    <!-- Superstore Sales Report -->
-    <div class="col-sm-4">
-        <div class="item">
-            <img src="assets/images/portfolio/Superstore.jpg" alt="portfolio image"/>
-            <div class="isotope-overlay">
-                <a href="https://github.com/rahul9908/-Superstore-Sales-Report">
-                    Superstore Sales Report
-                </a>
+    <div class="container">
+        <div class="projects-grid">
+            
+            <!-- Row 1 -->
+            <div class="project-card">
+                <h3 class="project-title">Agentic AI - Multi-Agent Medical Records</h3>
+                <p class="project-description">Production-grade RAG system with 5 specialized agents using LangGraph and ChromaDB, enabling 95%+ citation confidence and sub-3s latency.</p>
+                <div class="project-tags">
+                    <span class="tag">FastAPI</span>
+                    <span class="tag">LangChain</span>
+                    <span class="tag">ChromaDB</span>
+                    <span class="tag">Ollama</span>
+                    <span class="tag">SQLite</span>
+                    <span class="tag">Transformers</span>
+                </div>
+                <a href="https://github.com/rahul9908/Agentic-AI" target="_blank" class="project-link">GitHub →</a>
             </div>
+
+            <div class="project-card">
+                <h3 class="project-title">Clinical Consent NER + Risk Detector</h3>
+                <p class="project-description">End-to-end NLP pipeline with custom spaCy NER and Logistic Regression achieving 80%+ confidence in high-risk language detection.</p>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">spaCy</span>
+                    <span class="tag">scikit-learn</span>
+                    <span class="tag">NLP</span>
+                </div>
+                <a href="https://github.com/rahul9908/Clinical-Consent-NER" target="_blank" class="project-link">GitHub →</a>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">EscapeRL Maze Game</h3>
+                <p class="project-description">Interactive RL game implementing Q-Learning with epsilon-greedy exploration achieving 80%+ convergence accuracy on 15×15 mazes.</p>
+                <div class="project-tags">
+                    <span class="tag">React</span>
+                    <span class="tag">Q-Learning</span>
+                    <span class="tag">Tailwind CSS</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+                <a href="https://escaperl.streamlit.app/" target="_blank" class="project-link">Demo →</a>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="project-card">
+                <h3 class="project-title">Parkinson's Disease Detection</h3>
+                <p class="project-description">ML prediction model using SVM, Random Forest, and MLP with PCA for feature reduction achieving 90%+ accuracy.</p>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">PCA</span>
+                    <span class="tag">SVM</span>
+                    <span class="tag">RF</span>
+                    <span class="tag">MLP</span>
+                    <span class="tag">SMOTE</span>
+                </div>
+                <a href="https://github.com/rahul9908/Parkinsons-Disease-Detection" target="_blank" class="project-link">GitHub →</a>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">News Scraper App</h3>
+                <p class="project-description">Daily news aggregator with sentiment analysis using DistilBERT and T5-small for automatic summarization.</p>
+                <div class="project-tags">
+                    <span class="tag">Transformers</span>
+                    <span class="tag">Pandas</span>
+                    <span class="tag">NewsAPI</span>
+                    <span class="tag">DistilBERT</span>
+                    <span class="tag">T5-small</span>
+                    <span class="tag">Streamlit</span>
+                </div>
+                <a href="https://newsscraper-ibusywqgfkhznrysyeh3js.streamlit.app/" target="_blank" class="project-link">Demo →</a>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">AI Research Paper Summarizer</h3>
+                <p class="project-description">Automates paper summarization using TextRank and T5 Transformer model with ROUGE score evaluation.</p>
+                <div class="project-tags">
+                    <span class="tag">pdfplumber</span>
+                    <span class="tag">scikit-learn</span>
+                    <span class="tag">Hugging Face</span>
+                    <span class="tag">T5</span>
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">Git</span>
+                    <span class="tag">Streamlit</span>
+                </div>
+                <a href="https://ai-research-paper-summarizer-bddthsqmmgjugwk7w8wqy9.streamlit.app/" target="_blank" class="project-link">Demo →</a>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="project-card">
+                <h3 class="project-title">US Accident Insights</h3>
+                <p class="project-description">Interactive R Shiny dashboard analyzing 4.2M+ accident records with state-wise trends and weather impacts.</p>
+                <div class="project-tags">
+                    <span class="tag">dplyr</span>
+                    <span class="tag">lubridate</span>
+                    <span class="tag">ggplot2</span>
+                    <span class="tag">RShiny</span>
+                </div>
+                <a href="https://clarksonuniv.shinyapps.io/US-Accident-Insights-Rahul" target="_blank" class="project-link">Demo →</a>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">Medical Chatbot</h3>
+                <p class="project-description">Hybrid chatbot using Neo4j Knowledge Graph for structured queries and GPT-2 for conversational responses with 0% hallucination.</p>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Neo4j</span>
+                    <span class="tag">Cypher</span>
+                    <span class="tag">RAG</span>
+                    <span class="tag">GPT</span>
+                    <span class="tag">spaCy</span>
+                    <span class="tag">Streamlit</span>
+                </div>
+                <a href="https://github.com/rahul9908/Medical-Chatbot" target="_blank" class="project-link">GitHub →</a>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">Snow Depth Forecasting</h3>
+                <p class="project-description">Time series forecasting for Tupper Lake using ARIMA, AutoARIMA, and Holt-Winters models for 2026 winter predictions.</p>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">ARIMA</span>
+                    <span class="tag">AutoARIMA</span>
+                    <span class="tag">HoltWinters</span>
+                </div>
+                <a href="https://github.com/rahul9908/Timeseries-Analysis-Tupperlake" target="_blank" class="project-link">GitHub →</a>
+            </div>
+
+            <!-- Row 4 -->
+            <div class="project-card">
+                <h3 class="project-title">Course Recommendation System</h3>
+                <p class="project-description">SQL-based academic planning system optimizing course recommendations with triggers and stored procedures.</p>
+                <div class="project-tags">
+                    <span class="tag">SQL</span>
+                </div>
+                <a href="https://github.com/rahul9908/-Personalized-Course-Recommendation-Database-System" target="_blank" class="project-link">GitHub →</a>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">Superstore Sales Report</h3>
+                <p class="project-description">Retail analytics visualizing 1,000+ transactions across categories and regions for strategic decision-making.</p>
+                <div class="project-tags">
+                    <span class="tag">R Language</span>
+                    <span class="tag">ggplot2</span>
+                    <span class="tag">Excel</span>
+                    <span class="tag">dplyr</span>
+                </div>
+                <a href="https://github.com/rahul9908/-Superstore-Sales-Report" target="_blank" class="project-link">GitHub →</a>
+            </div>
+
+        </div><!--/.projects-grid-->
+
+        <div class="custom-button">
+            <a href="https://github.com/rahul9908?tab=repositories" target="_blank" role="button">
+                <p>Explore More <i class="fa fa-github-alt" aria-hidden="true"></i></p>
+            </a>
         </div>
-        <p><strong>[R Language, ggplot2, Excel, dplyr]</strong></p>
-        <p>Analyzed 1,000+ retail transactions from 2019 to visualize profit and loss across product categories and regions. A stacked bar chart highlights which categories performed well in each region, helping identify underperforming areas and guiding strategic decisions.</p>
-    </div>
-</div>
 
-        </div><!--/.isotope-->
-    </div><!--/.gallery-content-->
-
-    <div class="custom-button">
-        <a href="https://github.com/rahul9908?tab=repositories" role="button"><p>Explore more <i class="fa fa-github-alt" aria-hidden="true"></i></p></a>
-    </div>
-
-</div><!--/.container-->
-
+    </div><!--/.container-->
+</section><!--/.portfolio-->
+<!--portfolio end -->
 
 <!--education end -->
-		<!--skills start -->
-		<section id="skills" class="skills-section">
-			<div class="container">
-				<div class="section-heading text-center">
-					<h2>skills</h2>
-				</div>
-				
-				<!-- Languages Section -->
-				<div class="skills-category">
-					<h3>LANGUAGES</h3>
-					<div class="skills-grid">
-						<div class="skill-item">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
-							<p>Python</p>
-						</div>
-						<div class="skill-item">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/r/r-original.svg" />
-							<p>R</p>
-						</div>
-						<div class="skill-item">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqldeveloper/sqldeveloper-original.svg" />
-							<p>SQL</p>
-						</div>
-						<div class="skill-item">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matlab/matlab-original.svg" />						  
-							<p>MATLAB</p>
-						</div>
-						<div class="skill-item">		
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" />        
-							<p>C</p>
-						</div>
-						<div class="skill-item">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
-							<p>Java</p>
-						</div>
-						<div class="skill-item">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-							<p>JavaScript</p>
-						</div>
-						</div>
-						<div class="skill-item">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-							<p>HTML5</p>
-						</div>
-						<div class="skill-item">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
-							<p>CSS3</p>
-						</div>
-					</div>
-				</div>
 		
-				<!-- Libraries Section -->
-				<div class="skills-category">
-					<h3>PY-LIBRARIES</h3>
-					<div class="skills-grid">
-						<div class="skill-item">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" />
-							<p>Pandas</p>
-						</div>
-						<div class="skill-item">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" />
-							<p>NumPy</p>
-						</div>
-						<div class="skill-item">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" />
-							<p>Matplotlib</p>
-						</div>
-						<div class="skill-item">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" />
-							<p>scikit-learn</p>
-						</div>
-						<div class="skill-item">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" />
-							<p>TensorFlow</p>
-						</div>
-						<div class="skill-item">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/keras/keras-original.svg" />
-							<p>Keras</p>
-						</div>
-						<div class="skill-item">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" />
-							<p>Pytorch</p>
-						</div>
-						<div class="skill-item">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scipy/scipy-original.svg" />
-							<p>SciPy</p>
-						</div>
-						
-						<div class="skill-item">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pyspark/pyspark-original.svg" />
-							<p>PySpark</p>
-						</div>
-						
-						<div class="skill-item">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg" />
-							<p>OpenCV</p>
-						</div>
-						<div class="skill-item">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" />
-							<p>Matplotlib</p>
-						</div>
-						
-						<div class="skill-item">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/seaborn/seaborn-original.svg" />
-							<p>Seaborn</p>
-						</div>
-						
-						<div class="skill-item">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" />
-							<p>Azure</p>
-						</div>
-						
-					</div>
-				</div>
-				
-
-				<div class="skills-category">
-					<h3>TOOLS & TECHNOLOGY</h3>
-					<div class="skills-grid">
-						<!-- Technology items -->
-						
-						<div class="skill-item">
-
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" />
-							<p>MongoDB</p>
-						</div>
-						
-						<div class="skill-item">
-
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg" />
-							<p>Visual Studio</p>
-						</div>
-						
-						<div class="skill-item">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg" />
-							<p>MYSQL Server</p>
-						</div>
-						<div class="skill-item">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tortoisegit/tortoisegit-original.svg" />
-							<p>Git</p>
-						</div>
-						<div class="skill-item">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
-							<p>AWS</p>
-						</div>
-						<div class="skill-item">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tableau/tableau-original.svg" />
-							<p>Tableau</p>
-						</div>
-						
-						<div class="skill-item">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/powerbi/powerbi-original.svg" />
-							<p>Power BI</p>
-						</div>
-						<div class="skill-item">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/snowflake/snowflake-original.svg" />
-							<p>Snowflake</p>
-						</div>
-						
-						
-					</div>
-				</div>
-				<!-- Add more categories as needed -->
-			</div>
-		</section>
 
 </div><!--/.portfolio-details-->
 
