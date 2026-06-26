@@ -1,643 +1,454 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rahul Tammalla – AI Software Engineer building production agentic LLM systems, RAG pipelines, and cloud backends.">
+  <title>Rahul Tammalla</title>
+  <link rel="icon" type="image/png" href="assets/logo/NN2.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X3T2V9K1VE"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-X3T2V9K1VE');</script>
+</head>
+<body>
+  <!-- Custom cursor (desktop only) -->
+  <div id="cursor-dot"  class="cursor-dot"></div>
+  <div id="cursor-ring" class="cursor-ring"></div>
 
-    <head>
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <header class="nav" id="nav">
+    <nav class="nav-inner">
+      <a href="/" class="nav-logo">RT<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about"><span class="num">01.</span> About</a></li>
+        <li><a href="#experience"><span class="num">02.</span> Experience</a></li>
+        <li><a href="#work"><span class="num">03.</span> Work</a></li>
+        <li><a href="#contact"><span class="num">04.</span> Contact</a></li>
+      </ul>
+      <a href="assets/download/Rahul_Tammalla_AI.pdf" class="btn-outline" download>Resume</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <i class="fa-solid fa-bars" id="hamIcon"></i>
+      </button>
+    </nav>
+  </header>
 
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-X3T2V9K1VE"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+  <!-- Mobile drawer -->
+  <div class="drawer" id="drawer">
+    <button class="drawer-close" id="drawerClose"><i class="fa-solid fa-xmark"></i></button>
+    <nav class="drawer-nav">
+      <ol>
+        <li><a href="#about" class="drawer-link"><span>01.</span> About</a></li>
+        <li><a href="#experience" class="drawer-link"><span>02.</span> Experience</a></li>
+        <li><a href="#work" class="drawer-link"><span>03.</span> Work</a></li>
+        <li><a href="#contact" class="drawer-link"><span>04.</span> Contact</a></li>
+      </ol>
+      <a href="assets/download/Rahul_Tammalla_AI.pdf" class="btn-outline drawer-resume" download>Resume</a>
+    </nav>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
 
-		gtag('config', 'G-X3T2V9K1VE');
-		</script>
 
-        <!-- meta data -->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <!-- ============================================================
+       SIDE RAILS (desktop only)
+  ============================================================ -->
 
-        <!--font-family-->
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
-        
-        <!-- title of site -->
-        <title>Rahul Tammalla</title>
+  <!-- Left rail: social icons + line -->
+  <div class="side-rail side-left">
+    <ul class="side-social">
+      <li><a href="https://github.com/rahul9908" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+      <li><a href="https://linkedin.com/in/tammalla-rahul" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+      <li><a href="mailto:tammalr@clarkson.edu" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></li>
+    </ul>
+  </div>
 
-        <!-- For favicon png -->
-		<link rel="shortcut icon" type="image/icon" href="assets/logo/NN2.png"/>
-       
-        <!--font-awesome.min.css-->
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <!-- Right rail: rotated email + line -->
+  <div class="side-rail side-right">
+    <a href="mailto:tammalr@clarkson.edu" class="side-email">tammalr@clarkson.edu</a>
+  </div>
 
-		<!--flat icon css-->
-		<link rel="stylesheet" href="assets/css/flaticon.css">
 
-		<!--animate.css-->
-        <link rel="stylesheet" href="assets/css/animate.css">
+  <!-- ============================================================
+       MAIN CONTENT
+  ============================================================ -->
+  <main>
 
-        <!--owl.carousel.css-->
-        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-		
-        <!--bootstrap.min.css-->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-		
-		<!-- bootsnav -->
-		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
-        
-        <!--style.css-->
-        <link rel="stylesheet" href="assets/css/style.css">
-        
-        <!--responsive.css-->
-        <link rel="stylesheet" href="assets/css/responsive.css">
-
-		
-		<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-		<!-- Font Awesome Icons -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
-          
-        
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		
-        <!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-    </head>
-	
-	
-	<body>
-		<!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-		
-		<!-- top-area Start -->
-		<header class="top-area">
-			<div class="header-area">
-				<!-- Start Navigation -->
-			    <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
-
-			        <div class="container">
-
-			            <!-- Start Header Navigation -->
-			            <div class="navbar-header">
-			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-			                    <i class="fa fa-bars"></i>
-			                </button>
-			                <a class="navbar-brand" href="index.html">Rahul</a>
-			            </div><!--/.navbar-header-->
-			            <!-- End Header Navigation -->
-
-						
-						
-			            <!-- Collect the nav links, forms, and other content for toggling -->
-			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
-			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-			                    <li class="smooth-menu"><a href="#experience">experience</a></li>
-								<li class=" smooth-menu"><a href="#education">education</a></li>
-			                    <li class="smooth-menu"><a href="#portfolio">projects</a></li>
-								<!-- <li class="smooth-menu"><a href="#skills">skills</a></li>-->
-			                    <!-- <li class="smooth-menu"><a href="#clients">softwares</a></li> -->
-			                    <li class="smooth-menu"><a href="#contact">contact</a></li>
-								<li class="theme-toggle">
-									<label class="switch">
-										<input type="checkbox" id="theme-toggle">
-										<span class="slider round">
-											<i class="fas fa-sun" id="sun-icon"></i>
-											<i class="fas fa-moon" id="moon-icon"></i>
-										</span>
-									</label>
-								</li>
-								
-								
-								
-								
-								
-			                </ul><!--/.nav -->
-			            </div><!-- /.navbar-collapse -->
-			        </div><!--/.container-->
-			    </nav><!--/nav-->
-			    <!-- End Navigation -->
-			</div><!--/.header-area-->
-
-		    <div class="clearfix"></div>
-
-		</header><!-- /.top-area-->
-		<!-- top-area End -->
-	
-		<!--welcome-hero start -->
-<section id="welcome-hero" class="welcome-hero" style="background-image: url('assets/images/about/Background.jpg');background-size: cover; background-position: center;">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-right">
-                <div class="header-text">
-                    <h2>hi <span>,</span> i am <br> Rahul <br> Tammalla <span></span> </h2>
-                    <p>AI Engineer <br> Machine Learning Engineer <br> Data Scientist<br> Data Engineer</p>
-                    <a href="assets/download/Rahul_Tammalla.pdf" download style="padding-right: 2%;">download resume</a>
-                </div><!--/.header-text-->
-            </div><!--/.col-->
-        </div><!-- /.row-->
-    </div><!-- /.container-->
-</section><!--/.welcome-hero-->
-<!--welcome-hero end -->
-
-		<!--about start -->
-<section id="about" class="about">
-    <div class="section-heading text-center">
-        <h2>about me</h2>
-    </div>
-    <div class="container">
-        <div class="about-content">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="single-about-txt">
-                        <h3>
-                            Hello there, I'm Rahul Tammalla - I am an AI and Machine Learning Engineer with over four years of experience building intelligent systems that turn data into actionable insights.
-                        </h3>
-                        <p>
-                            I specialize in designing and deploying production-grade AI/ML solutions — from building multi-agent RAG systems and NLP pipelines to developing reinforcement learning models and predictive analytics. With expertise in Python, deep learning frameworks (PyTorch, TensorFlow), LangChain, and cloud technologies, I create scalable AI-driven applications that solve complex real-world problems and enable data-backed decision-making.
-                        </p>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="single-about-add-info">
-                                    <h3>Location</h3>
-                                    <p>Potsdam, NY</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="single-about-add-info">
-                                    <h3>email</h3>
-                                    <a href="mailto:tammalr@clarkson.edu"><p>tammalr@clarkson.edu</p></a>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="single-about-add-info">
-                                    <h3>Phone</h3>
-                                    <a href="tel:+13156037792"><p>+1(315)-603-7792</p></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-offset-1 col-sm-5">
-                    <div class="single-about-img">
-                        <img src="assets/images/about/Photo.jpg" alt="photo" class="img-fluid">
-                    </div>
-                </div>
-            </div>
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <p class="hero-label fade-up" style="--delay:100ms">Hi, my name is</p>
+        <h1 class="hero-name fade-up" style="--delay:200ms">Rahul Tammalla.</h1>
+        <h2 class="hero-tagline fade-up" style="--delay:300ms">I build AI that ships to production.</h2>
+        <p class="hero-desc fade-up" style="--delay:400ms">
+          I'm an AI Software Engineer completing my M.S. in Applied Data Science at Clarkson University (May 2026).
+          I specialize in building production-grade agentic LLM systems, RAG pipelines, and the
+          FastAPI/AWS backends that put them in front of real users.
+        </p>
+        <div class="hero-cta fade-up" style="--delay:500ms">
+          <a href="#work" class="btn-outline btn-magnetic">Check out my work &#8594;</a>
         </div>
-    </div>
-</section><!--/.about-->
-<!--about end -->
-
-<section id="mission" class="mission">
-    <div class="section-heading text-center">
-        <h2>mission</h2>
-    </div>
-    <div class="container">
-        <div class="single-about-txt">
-            <blockquote class="mission-quote">
-                <p>
-                    My mission is to architect intelligent AI systems that transform data into solutions. Through advanced machine learning, NLP, and production-grade AI applications, I build scalable models that solve complex real-world problems and drive data-driven innovation.
-                </p>
-            </blockquote>	
+        <!-- Scrolling role marquee -->
+        <div class="marquee-wrap fade-up" style="--delay:650ms" aria-hidden="true">
+          <div class="marquee-track">
+            <span>AI Engineer</span><span class="msep">/</span>
+            <span>ML Engineer</span><span class="msep">/</span>
+            <span>Data Scientist</span><span class="msep">/</span>
+            <span>LLM Systems</span><span class="msep">/</span>
+            <span>RAG Pipelines</span><span class="msep">/</span>
+            <span>Backend Engineer</span><span class="msep">/</span>
+            <span>AI Engineer</span><span class="msep">/</span>
+            <span>ML Engineer</span><span class="msep">/</span>
+            <span>Data Scientist</span><span class="msep">/</span>
+            <span>LLM Systems</span><span class="msep">/</span>
+            <span>RAG Pipelines</span><span class="msep">/</span>
+            <span>Backend Engineer</span><span class="msep">/</span>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- STATS STRIP -->
+    <div class="stats-strip">
+      <div class="stats-inner">
+        <div class="stat">
+          <p class="stat-val"><span class="stat-num" data-target="90">0</span><span class="stat-suf">%</span></p>
+          <p class="stat-label">workflow automated</p>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat">
+          <p class="stat-val"><span class="stat-num" data-target="20">0</span><span class="stat-suf">M+</span></p>
+          <p class="stat-label">records processed</p>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat">
+          <p class="stat-val"><span class="stat-num" data-target="42">0</span><span class="stat-suf">%</span></p>
+          <p class="stat-label">latency reduced</p>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat">
+          <p class="stat-val"><span class="stat-num" data-target="3">0</span><span class="stat-suf">yrs</span></p>
+          <p class="stat-label">in production</p>
+        </div>
+      </div>
     </div>
-</section>
-		
 
 
+    <!-- ============================================================
+         ABOUT
+    ============================================================ -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-heading reveal"><span class="section-num">01.</span> About Me</h2>
+        <div class="about-inner">
+          <div class="about-text reveal">
+            <p>I'm an AI Software Engineer who loves building intelligent systems that actually work in production. Currently completing my M.S. in Applied Data Science at Clarkson University as a Merit Scholar (GPA: 3.8/4.0).</p>
+            <p>My work spans the full ML lifecycle &mdash; from engineering features on 20M+ record datasets to shipping autonomous multi-agent swarms with human-in-the-loop safety gates. I care deeply about reliable, low-latency systems.</p>
+            <p>Outside of code, I'm a Graduate Teaching Assistant for Probability &amp; Statistics, and actively researching human preference modeling in LLM pairwise evaluations.</p>
+            <p>Here are a few technologies I've been working with recently:</p>
+            <ul class="about-tech-list">
+              <li>LangChain / LangGraph</li>
+              <li>FastAPI / Docker</li>
+              <li>RAG Pipelines</li>
+              <li>FAISS / ChromaDB</li>
+              <li>PyTorch / Transformers</li>
+              <li>AWS (S3, Glue, Lambda, EMR)</li>
+            </ul>
+            <div class="about-chips">
+              <span><i class="fa-solid fa-location-dot"></i> Richmond, VA &middot; Open to Relocation</span>
+              <span><i class="fa-solid fa-id-badge"></i> F-1 OPT</span>
+            </div>
+          </div>
+          <div class="about-img reveal">
+            <div class="img-wrapper">
+              <img src="assets/images/about/Photo.jpg" alt="Rahul Tammalla">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<!--experience start -->
-		<!--experience start -->
-<section id="experience" class="experience">
-    <div class="section-heading text-center">
-        <h2>experience</h2>
-    </div>
-    <div class="container">
-        <div class="experience-content">
-            
-            <!-- I4DI Internship -->
-            <div class="experience-card">
-                <h3 class="job-title">AI and Data Science Intern</h3>
-                <h4 class="company-name">I4DI - Institute for Development Impact</h4>
-                <p class="job-location">Washington, DC</p>
-                <p class="job-duration">May 2025 – Aug 2025</p>
-                <ul class="job-description">
-                    <li>Designed secure file upload system using <strong>Django, LangChain, FAISS</strong> supporting 5 files/session with automatic cleanup</li>
-                    <li>Built embedding pipelines enabling <strong>sub-second semantic search</strong> across 10K+ documents with <strong>50% faster retrieval</strong></li>
-                    <li>Developed AI survey system with <strong>Mistral 7B LLM</strong> reducing manual effort by <strong>70%</strong></li>
-                    <li>Integrated AI pipeline into Rails app using <strong>FastAPI</strong> for automated survey creation</li>
-                </ul>
+
+    <!-- ============================================================
+         EXPERIENCE
+    ============================================================ -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-heading reveal"><span class="section-num">02.</span> Where I've Worked</h2>
+        <div class="exp-container reveal">
+          <div class="exp-tabs" role="tablist">
+            <button class="exp-tab active" data-tab="i4di" role="tab">I4DI</button>
+            <button class="exp-tab" data-tab="clarkson-research" role="tab">Clarkson Research</button>
+            <button class="exp-tab" data-tab="clarkson-ta" role="tab">Clarkson TA</button>
+            <button class="exp-tab" data-tab="cognizant" role="tab">Cognizant</button>
+            <div class="tab-indicator"></div>
+          </div>
+          <div class="exp-panels">
+
+            <div class="exp-panel active" data-panel="i4di">
+              <h3 class="exp-title">AI Engineer Intern <span class="exp-company">@ <a href="#" class="accent-link">I4DI</a></span></h3>
+              <p class="exp-date">May 2025 &ndash; August 2025</p>
+              <ul class="exp-bullets">
+                <li>Built a multi-agent survey-generation system with <strong>Mistral 7B and Claude</strong>, using structured prompting and JSON-schema validation to fully automate survey authoring workflows, cutting manual effort by <strong>90%</strong>.</li>
+                <li>Designed a <strong>RAG pipeline</strong> with real-time knowledge-base override that prioritized uploaded documents over base-model knowledge, returning context-scoped answers in under <strong>3 seconds</strong> at 95%+ relevance.</li>
+                <li>Optimized <strong>GTE embedding pipelines</strong> in PyTorch with batched inference and async data loading, cutting embedding latency by <strong>42%</strong> (5.1s &rarr; 2.9s) and lifting Precision@K by 30%.</li>
+                <li>Shipped <strong>FAISS-backed semantic search</strong> with hybrid retrieval delivering sub-second query response across all analytics and real-time workloads.</li>
+              </ul>
             </div>
 
-            <!-- Research Assistant - Project 1 -->
-            <div class="experience-card">
-                <h3 class="job-title">Research Assistant</h3>
-                <h4 class="company-name">Clarkson University</h4>
-                <p class="job-location">Potsdam, NY</p>
-                <p class="job-duration">May 2025 – Sep 2025</p>
-                <ul class="job-description">
-                    <li>Analyzed <strong>20M+ emergency medical records</strong> using ML to identify stroke-related 911 response delays</li>
-                    <li>Cleaned healthcare data resolving <strong>1M+ missing values</strong> with <strong>95% data integrity</strong></li>
-                    <li>Engineered <strong>70+ features</strong> and extracted <strong>15 top predictors</strong> for EMS response time</li>
-                    <li>Built ML models (Random Forest, XGBoost, SVM) achieving <strong>20% accuracy boost</strong></li>
-                </ul>
+            <div class="exp-panel" data-panel="clarkson-research">
+              <h3 class="exp-title">ML Research Assistant <span class="exp-company">@ <a href="#" class="accent-link">Clarkson University</a></span></h3>
+              <p class="exp-date">January 2025 &ndash; July 2025</p>
+              <ul class="exp-bullets">
+                <li>Analyzed <strong>20M+ NEMSIS emergency records</strong> with statistical modeling and ML, engineering 70+ features to surface 15 predictors of stroke-related 911 delays &mdash; projected <strong>40% response time reduction</strong>.</li>
+                <li>Built Python/SQL/PySpark pipelines resolving <strong>1M+ missing values</strong> to 95% data quality, then trained Random Forest, XGBoost, LightGBM, SVM models lifting accuracy by <strong>20%</strong>.</li>
+                <li>Built an <strong>NLP extraction pipeline</strong> with spaCy, BeautifulSoup, and regex structuring 300+ normalized entities, boosting downstream data quality by 45%.</li>
+              </ul>
             </div>
 
-            <!-- Research Assistant - Project 2 -->
-            <div class="experience-card">
-                <h3 class="job-title">Research Assistant - NLP Project</h3>
-                <h4 class="company-name">Clarkson University</h4>
-                <p class="job-location">Potsdam, NY</p>
-                <p class="job-duration">Jan 2025 – May 2025</p>
-                <ul class="job-description">
-                    <li>Implemented scalable <strong>NLP pipeline</strong> producing dataset with <strong>300+ unique entities</strong></li>
-                    <li>Built data processing workflow using <strong>Pandas & spaCy</strong> for ML-ready text data</li>
-                    <li>Designed dashboards with <strong>R, Matplotlib, Seaborn</strong> revealing biodiversity patterns</li>
-                </ul>
+            <div class="exp-panel" data-panel="clarkson-ta">
+              <h3 class="exp-title">Graduate Teaching Assistant <span class="exp-company">@ <a href="#" class="accent-link">Clarkson University</a></span></h3>
+              <p class="exp-date">August 2024 &ndash; Present</p>
+              <ul class="exp-bullets">
+                <li>Teaching and grading for <strong>Graduate Probability &amp; Statistics</strong>, supporting 40+ students with statistical modeling and inference concepts.</li>
+                <li>Holding office hours, grading assignments, and reinforcing key concepts in hypothesis testing, regression, and statistical inference.</li>
+              </ul>
             </div>
 
-            <!-- Graduate Teaching Assistant -->
-            <div class="experience-card">
-                <h3 class="job-title">Graduate Teaching Assistant</h3>
-                <h4 class="company-name">Clarkson University</h4>
-                <p class="job-location">Potsdam, NY</p>
-                <p class="job-duration">Aug 2024 – Present</p>
-                <ul class="job-description">
-                    <li>Teaching <strong>Probability & Statistics</strong> course for <strong>50+ graduate students</strong></li>
-                    <li>Guided students in statistical methods: <strong>ANOVA, Chi-Square, Regression, Hypothesis Testing</strong></li>
-                    <li>Conducted office hours and review sessions improving course outcomes</li>
-                </ul>
+            <div class="exp-panel" data-panel="cognizant">
+              <h3 class="exp-title">Data Engineer <span class="exp-company">@ <a href="#" class="accent-link">Cognizant Technology Solutions</a></span></h3>
+              <p class="exp-date">October 2021 &ndash; August 2024</p>
+              <ul class="exp-bullets">
+                <li>Built <strong>Airflow/SQL ETL pipelines</strong> on Snowflake/Redshift processing 5M+ records daily, lifting reliability by <strong>70%</strong> and query performance by 30%.</li>
+                <li>Engineered cloud-native <strong>AWS (S3, Glue, Lambda, EMR)</strong> pipelines handling 1M+ daily transactions at <strong>95%+ uptime</strong> via CI/CD on Kubernetes.</li>
+                <li>Built <strong>5+ Tableau/Power BI dashboards</strong> integrating 3+ source systems, cutting manual reporting effort by 30%.</li>
+              </ul>
             </div>
 
-            <!-- Cognizant -->
-            <div class="experience-card">
-                <h3 class="job-title">Associate Engineer</h3>
-                <h4 class="company-name">Cognizant Technology Solutions</h4>
-                <p class="job-location">Hyderabad, India</p>
-                <p class="job-duration">Oct 2021 – Aug 2024</p>
-                <ul class="job-description">
-                    <li>Built scalable solutions processing <strong>1M+ transactions</strong> with <strong>20% speed increase</strong></li>
-                    <li>Created real-time dashboards for data-driven business insights</li>
-                    <li>Optimized <strong>SQL ETL pipelines</strong> improving retrieval speed by <strong>30%</strong></li>
-                    <li>Automated data processing for <strong>500+ daily records</strong> achieving <strong>98% accuracy</strong></li>
-                </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         WORK / PROJECTS
+    ============================================================ -->
+    <section id="work" class="section">
+      <div class="container">
+        <h2 class="section-heading reveal"><span class="section-num">03.</span> Some Things I've Built</h2>
+
+        <!-- Featured projects -->
+        <div class="featured-list">
+
+          <!-- Featured 1: DevOps Agent Swarm (image right) -->
+          <div class="fp reveal">
+            <div class="fp-content">
+              <p class="fp-overline">Featured Project</p>
+              <h3 class="fp-title"><a href="https://github.com/rahul9908/DevOps-Agent-Swarm" target="_blank" rel="noopener">DevOps Agent Swarm</a></h3>
+              <div class="fp-desc">
+                <p>An autonomous 6-agent swarm &mdash; Observer, Diagnoser, Remediator, Safety, Orchestrator, Learner &mdash; with LLM-powered root-cause diagnosis over NATS JetStream. Executes incident remediation via a formal FSM lifecycle with human-in-the-loop safety approval gates across complex microservices failure scenarios.</p>
+              </div>
+              <ul class="fp-tech">
+                <li>LangGraph</li><li>NATS JetStream</li><li>FastAPI</li><li>Docker</li><li>Gemini</li><li>Python</li>
+              </ul>
+              <div class="fp-links">
+                <a href="https://github.com/rahul9908/DevOps-Agent-Swarm" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
             </div>
-
-        </div><!--/.experience-content-->
-    </div><!--/.container-->
-</section><!--/.experience-->
-<!--experience end -->
-		<!--experience end -->
-
-		
-		<!-- Education Section -->
-<section id="education" class="education">
-    <div class="section-heading text-center">
-        <h2>education</h2>
-    </div>
-    <div class="container">
-        <div class="education-content">
-            
-            <!-- Master's Degree -->
-            <div class="education-card">
-                <h3 class="degree-title">Master of Science in Applied Data Science</h3>
-                <h4 class="university-name">Clarkson University</h4>
-                <p class="education-location">Potsdam, NY</p>
-                <p class="education-duration">Aug 2024 – May 2026</p>
-                <p class="gpa"><strong>GPA:</strong> 3.8/4.0</p>
-                <div class="education-details">
-                    <p><strong>Coursework:</strong> Machine Learning, Data Mining, Natural Language Processing, Big Data and Cloud Technologies, Data Warehousing, Information Visualization, Database Modeling, Probability Statistics, Strategic Project Management</p>
+            <div class="fp-image">
+              <a href="https://github.com/rahul9908/DevOps-Agent-Swarm" target="_blank" rel="noopener">
+                <div class="fp-img-placeholder" style="background: linear-gradient(135deg, #1a1a4e 0%, #312e81 50%, #1e1b4b 100%);">
+                  <div class="fp-img-label">
+                    <i class="fa-solid fa-network-wired"></i>
+                    <span>Multi-Agent Swarm</span>
+                  </div>
                 </div>
+              </a>
             </div>
+          </div>
 
-            <!-- Bachelor's Degree -->
-            <div class="education-card">
-                <h3 class="degree-title">Bachelor of Technology in Computer Science Engineering</h3>
-                <h4 class="university-name">Amrita Vishwa Vidyapeetham</h4>
-                <p class="education-location">Kerala, India</p>
-                <p class="education-duration">May 2017 – Jun 2021</p>
-                <div class="education-details">
-                    <p><strong>Coursework:</strong> Data Structures, Algorithms, Operating Systems, System Design, DBMS, Software Engineering, App Development</p>
+          <!-- Featured 2: MedGraph AI (image left) -->
+          <div class="fp fp-reverse reveal">
+            <div class="fp-content">
+              <p class="fp-overline">Featured Project</p>
+              <h3 class="fp-title"><a href="https://github.com/rahul9908/Medical-AI-search-assistant" target="_blank" rel="noopener">MedGraph AI</a></h3>
+              <div class="fp-desc">
+                <p>Multi-agent medical records assistant with 5-agent orchestration (Router, Retriever, Context Builder, Citation Extractor, Answer Generator). Combines semantic and keyword hybrid search with evidence-backed citations and confidence scores across 50 patient records.</p>
+              </div>
+              <ul class="fp-tech">
+                <li>LangChain</li><li>LangGraph</li><li>ChromaDB</li><li>Mistral</li><li>FastAPI</li>
+              </ul>
+              <div class="fp-links">
+                <a href="https://github.com/rahul9908/Medical-AI-search-assistant" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <div class="fp-image">
+              <a href="https://github.com/rahul9908/Medical-AI-search-assistant" target="_blank" rel="noopener">
+                <div class="fp-img-placeholder" style="background: linear-gradient(135deg, #0c2340 0%, #0c4a6e 50%, #0a192f 100%);">
+                  <div class="fp-img-label">
+                    <i class="fa-solid fa-brain"></i>
+                    <span>RAG + Multi-Agent</span>
+                  </div>
                 </div>
+              </a>
             </div>
+          </div>
 
-        </div><!--/.education-content-->
-    </div><!--/.container-->
-</section><!--/.education-->
-		
-		
-
-<!--portfolio start -->
-<section id="portfolio" class="portfolio">
-    <div class="section-heading text-center">
-        <h2>projects</h2>
-    </div>
-    <div class="container">
-        <div class="projects-grid">
-            
-            <!-- Row 1 -->
-            <div class="project-card">
-                <h3 class="project-title">Agentic AI - Multi-Agent Medical Records</h3>
-                <p class="project-description">Production-grade RAG system with 5 specialized agents using LangGraph and ChromaDB, enabling 95%+ citation confidence and sub-3s latency.</p>
-                <div class="project-tags">
-                    <span class="tag">FastAPI</span>
-                    <span class="tag">LangChain</span>
-                    <span class="tag">ChromaDB</span>
-                    <span class="tag">Ollama</span>
-                    <span class="tag">SQLite</span>
-                    <span class="tag">Transformers</span>
-                </div>
-                <a href="https://github.com/rahul9908/Agentic-AI" target="_blank" class="project-link">GitHub →</a>
-            </div>
-
-            <div class="project-card">
-                <h3 class="project-title">Clinical Consent NER + Risk Detector</h3>
-                <p class="project-description">End-to-end NLP pipeline with custom spaCy NER and Logistic Regression achieving 80%+ confidence in high-risk language detection.</p>
-                <div class="project-tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">spaCy</span>
-                    <span class="tag">scikit-learn</span>
-                    <span class="tag">NLP</span>
-                </div>
-                <a href="https://github.com/rahul9908/Clinical-Consent-NER" target="_blank" class="project-link">GitHub →</a>
-            </div>
-
-            <div class="project-card">
-                <h3 class="project-title">EscapeRL Maze Game</h3>
-                <p class="project-description">Interactive RL game implementing Q-Learning with epsilon-greedy exploration achieving 80%+ convergence accuracy on 15×15 mazes.</p>
-                <div class="project-tags">
-                    <span class="tag">React</span>
-                    <span class="tag">Q-Learning</span>
-                    <span class="tag">Tailwind CSS</span>
-                    <span class="tag">JavaScript</span>
-                </div>
-                <a href="https://escaperl.streamlit.app/" target="_blank" class="project-link">Demo →</a>
-            </div>
-
-            <!-- Row 2 -->
-            <div class="project-card">
-                <h3 class="project-title">Parkinson's Disease Detection</h3>
-                <p class="project-description">ML prediction model using SVM, Random Forest, and MLP with PCA for feature reduction achieving 90%+ accuracy.</p>
-                <div class="project-tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">PCA</span>
-                    <span class="tag">SVM</span>
-                    <span class="tag">RF</span>
-                    <span class="tag">MLP</span>
-                    <span class="tag">SMOTE</span>
-                </div>
-                <a href="https://github.com/rahul9908/Parkinsons-Disease-Detection" target="_blank" class="project-link">GitHub →</a>
-            </div>
-
-            <div class="project-card">
-                <h3 class="project-title">News Scraper App</h3>
-                <p class="project-description">Daily news aggregator with sentiment analysis using DistilBERT and T5-small for automatic summarization.</p>
-                <div class="project-tags">
-                    <span class="tag">Transformers</span>
-                    <span class="tag">Pandas</span>
-                    <span class="tag">NewsAPI</span>
-                    <span class="tag">DistilBERT</span>
-                    <span class="tag">T5-small</span>
-                    <span class="tag">Streamlit</span>
-                </div>
-                <a href="https://newsscraper-ibusywqgfkhznrysyeh3js.streamlit.app/" target="_blank" class="project-link">Demo →</a>
-            </div>
-
-            <div class="project-card">
-                <h3 class="project-title">AI Research Paper Summarizer</h3>
-                <p class="project-description">Automates paper summarization using TextRank and T5 Transformer model with ROUGE score evaluation.</p>
-                <div class="project-tags">
-                    <span class="tag">pdfplumber</span>
-                    <span class="tag">scikit-learn</span>
-                    <span class="tag">Hugging Face</span>
-                    <span class="tag">T5</span>
-                    <span class="tag">PyTorch</span>
-                    <span class="tag">Git</span>
-                    <span class="tag">Streamlit</span>
-                </div>
-                <a href="https://ai-research-paper-summarizer-bddthsqmmgjugwk7w8wqy9.streamlit.app/" target="_blank" class="project-link">Demo →</a>
-            </div>
-
-            <!-- Row 3 -->
-            <div class="project-card">
-                <h3 class="project-title">US Accident Insights</h3>
-                <p class="project-description">Interactive R Shiny dashboard analyzing 4.2M+ accident records with state-wise trends and weather impacts.</p>
-                <div class="project-tags">
-                    <span class="tag">dplyr</span>
-                    <span class="tag">lubridate</span>
-                    <span class="tag">ggplot2</span>
-                    <span class="tag">RShiny</span>
-                </div>
-                <a href="https://clarksonuniv.shinyapps.io/US-Accident-Insights-Rahul" target="_blank" class="project-link">Demo →</a>
-            </div>
-
-            <div class="project-card">
-                <h3 class="project-title">Medical Chatbot</h3>
-                <p class="project-description">Hybrid chatbot using Neo4j Knowledge Graph for structured queries and GPT-2 for conversational responses with 0% hallucination.</p>
-                <div class="project-tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">Neo4j</span>
-                    <span class="tag">Cypher</span>
-                    <span class="tag">RAG</span>
-                    <span class="tag">GPT</span>
-                    <span class="tag">spaCy</span>
-                    <span class="tag">Streamlit</span>
-                </div>
-                <a href="https://github.com/rahul9908/Medical-Chatbot" target="_blank" class="project-link">GitHub →</a>
-            </div>
-
-            <div class="project-card">
-                <h3 class="project-title">Snow Depth Forecasting</h3>
-                <p class="project-description">Time series forecasting for Tupper Lake using ARIMA, AutoARIMA, and Holt-Winters models for 2026 winter predictions.</p>
-                <div class="project-tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">ARIMA</span>
-                    <span class="tag">AutoARIMA</span>
-                    <span class="tag">HoltWinters</span>
-                </div>
-                <a href="https://github.com/rahul9908/Timeseries-Analysis-Tupperlake" target="_blank" class="project-link">GitHub →</a>
-            </div>
-
-            <!-- Row 4 -->
-            <div class="project-card">
-                <h3 class="project-title">Course Recommendation System</h3>
-                <p class="project-description">SQL-based academic planning system optimizing course recommendations with triggers and stored procedures.</p>
-                <div class="project-tags">
-                    <span class="tag">SQL</span>
-                </div>
-                <a href="https://github.com/rahul9908/-Personalized-Course-Recommendation-Database-System" target="_blank" class="project-link">GitHub →</a>
-            </div>
-
-            <div class="project-card">
-                <h3 class="project-title">Superstore Sales Report</h3>
-                <p class="project-description">Retail analytics visualizing 1,000+ transactions across categories and regions for strategic decision-making.</p>
-                <div class="project-tags">
-                    <span class="tag">R Language</span>
-                    <span class="tag">ggplot2</span>
-                    <span class="tag">Excel</span>
-                    <span class="tag">dplyr</span>
-                </div>
-                <a href="https://github.com/rahul9908/-Superstore-Sales-Report" target="_blank" class="project-link">GitHub →</a>
-            </div>
-
-        </div><!--/.projects-grid-->
-
-        <div class="custom-button">
-            <a href="https://github.com/rahul9908?tab=repositories" target="_blank" role="button">
-                <p>Explore More <i class="fa fa-github-alt" aria-hidden="true"></i></p>
-            </a>
         </div>
 
-    </div><!--/.container-->
-</section><!--/.portfolio-->
-<!--portfolio end -->
+        <!-- Other noteworthy projects -->
+        <h3 class="other-heading reveal">Other Noteworthy Projects</h3>
+        <div class="other-grid">
 
-<!--education end -->
-		
+          <div class="other-card reveal">
+            <div class="card-top">
+              <i class="fa-solid fa-folder-open card-folder"></i>
+              <div class="card-links">
+                <a href="https://github.com/rahul9908/clinical-consent-NER-Project" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <h4 class="card-title">Clinical Consent NER</h4>
+            <p class="card-desc">Fine-tuned Transformer NER on clinical consent docs reaching 85% F1 across 5 entity types and 88% risk classification accuracy. Automates consent-language risk detection at scale.</p>
+            <ul class="card-tech"><li>spaCy</li><li>Transformers</li><li>scikit-learn</li><li>Python</li></ul>
+          </div>
 
-</div><!--/.portfolio-details-->
+          <div class="other-card reveal">
+            <div class="card-top">
+              <i class="fa-solid fa-folder-open card-folder"></i>
+              <div class="card-links">
+                <a href="https://rahul9908.github.io/escaperl-game/" target="_blank" rel="noopener" aria-label="Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="https://github.com/rahul9908/escaperl-game" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <h4 class="card-title">EscapeRL &mdash; Q-Learning Maze</h4>
+            <p class="card-desc">Interactive Q-Learning agent navigating a 15&times;15 dynamic maze. Real-time training visualization, configurable hyperparameters, custom map editor. 80%+ policy convergence.</p>
+            <ul class="card-tech"><li>React</li><li>Q-Learning</li><li>Tailwind CSS</li><li>JavaScript</li></ul>
+          </div>
 
+          <div class="other-card reveal">
+            <div class="card-top">
+              <i class="fa-solid fa-folder-open card-folder"></i>
+              <div class="card-links">
+                <a href="https://github.com/rahul9908" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <h4 class="card-title">Parkinson's Disease Detection</h4>
+            <p class="card-desc">Supervised pipeline (SVM, RF, MLP) with PCA and SMOTE oversampling achieving 95%+ accuracy on a highly imbalanced clinical voice feature dataset.</p>
+            <ul class="card-tech"><li>Python</li><li>SVM</li><li>PCA</li><li>SMOTE</li><li>scikit-learn</li></ul>
+          </div>
 
-		<!--contact start -->
-		<section id="contact" class="contact">
-			<div class="section-heading text-center">
-				<h2>contact me</h2>
-			</div>
-			<div class="container">
-				<div class="contact-content">
-					<div class="row">
-						<div class="col-md-offset-1 col-md-5 col-sm-6">
-							<div class="single-contact-box">
-								<div class="contact-form">
-									<form>
-										<div class="row">
-											<div class="col-sm-6 col-xs-12">
-												<div class="form-group">
-												  <input type="text" class="form-control" id="name" placeholder="Name*" name="name">
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-											<div class="col-sm-6 col-xs-12">
-												<div class="form-group">
-													<input type="email" class="form-control" id="email" placeholder="Email*" name="email">
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-										<div class="row">
-											<div class="col-sm-12">
-												<div class="form-group">
-													<input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-										<div class="row">
-											<div class="col-sm-12">
-												<div class="form-group">
-													<textarea class="form-control" rows="8" id="comment" placeholder="Message" ></textarea>
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-										<div class="row">
-											<div class="col-sm-12">
-												<div class="single-contact-btn">
-													<a class="contact-btn" href="mailto:tammalr@clarkson.edu" role="button">submit</a>
-												</div><!--/.single-single-contact-btn-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-									</form><!--/form-->
-								</div><!--/.contact-form-->
-							</div><!--/.single-contact-box-->
-						</div><!--/.col-->
-						<div class="col-md-offset-1 col-md-5 col-sm-6">
-							<div class="single-contact-box">
-								<div class="contact-adress">
-									<div class="contact-add-head">
-										<h3>Rahul Tammalla</h3>
-										<p> Data Analyst / Data Engineer / Data Scientist </p>
-									</div>
-									<div class="contact-add-info">
-										<div class="single-contact-add-info">
-											<h3>linkedin</h3>
-											<a href="https://www.linkedin.com/in/tammalla-rahul/"><p>Rahul-Linkedin</p></a>
-										</div>
-										<div class="single-contact-add-info">
-											<h3>email</h3>
-											<a href="mailto:tammalr@clarkson.edu"><p>Rahul-email</p></a>
-										</div>
-										
-									</div>
-								</div><!--/.contact-adress-->
-								
-							</div><!--/.single-contact-box-->
-						</div><!--/.col-->
-					</div><!--/.row-->
-				</div><!--/.contact-content-->
-			</div><!--/.container-->
+          <div class="other-card reveal">
+            <div class="card-top">
+              <i class="fa-solid fa-folder-open card-folder"></i>
+              <div class="card-links">
+                <a href="https://github.com/rahul9908" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <h4 class="card-title">NYC Public Safety System</h4>
+            <p class="card-desc">Processed 25GB+ NYC 311/NYPD data with Python/SQL and scikit-learn, surfacing 12+ spatial safety patterns at 82%+ accuracy through interactive Folium maps and a live FastAPI dashboard.</p>
+            <ul class="card-tech"><li>Python</li><li>SQL</li><li>FastAPI</li><li>Folium</li></ul>
+          </div>
 
-		</section><!--/.contact-->
-		<!--contact end -->
+          <div class="other-card reveal">
+            <div class="card-top">
+              <i class="fa-solid fa-folder-open card-folder"></i>
+              <div class="card-links">
+                <a href="https://github.com/rahul9908/NewsScraper" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <h4 class="card-title">News Scraper &amp; Summarizer</h4>
+            <p class="card-desc">End-to-end NLP pipeline using DistilBERT for classification and T5 for abstractive summarization of news articles, delivered through a real-time Streamlit interface.</p>
+            <ul class="card-tech"><li>DistilBERT</li><li>T5</li><li>Streamlit</li><li>Python</li></ul>
+          </div>
 
-		<!--footer-copyright start-->
-		<footer id="footer-copyright" class="footer-copyright">
-			<div class="container">
-				<div class="hm-footer-copyright text-center">
-					<p>
-						&copy; copyright Rahul Tammalla. </a>
-					</p><!--/p-->
-				</div><!--/.text-center-->
-			</div><!--/.container-->
+          <div class="other-card reveal">
+            <div class="card-top">
+              <i class="fa-solid fa-folder-open card-folder"></i>
+              <div class="card-links">
+                <a href="https://github.com/rahul9908/US-Accident-Insights" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <h4 class="card-title">US Accident Insights</h4>
+            <p class="card-desc">Statistical analysis of 4.2M+ US traffic accident records using R and R Markdown, surfacing geospatial and temporal patterns with reproducible analysis workflows.</p>
+            <ul class="card-tech"><li>R</li><li>R Markdown</li><li>ggplot2</li><li>Statistical Analysis</li></ul>
+          </div>
 
-			<div id="scroll-Top">
-				<div class="return-to-top">
-					<i class="fa fa-angle-up " id="scroll-top" ></i>
-				</div>
-				
-			</div><!--/.scroll-Top-->
-			
-        </footer><!--/.footer-copyright-->
-		<!--footer-copyright end-->
-		
-		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+        </div>
 
-		<script src="assets/js/jquery.js"></script>
-        
-        <!--modernizr.min.js-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-		
-		<!--bootstrap.min.js-->
-        <script src="assets/js/bootstrap.min.js"></script>
-		
-		<!-- bootsnav js -->
-		<script src="assets/js/bootsnav.js"></script>
-		
-		<!-- jquery.sticky.js -->
-		<script src="assets/js/jquery.sticky.js"></script>
-		
-		<!-- for progress bar start-->
-
-		<!-- progressbar js -->
-		<script src="assets/js/progressbar.js"></script>
-
-		<!-- appear js -->
-		<script src="assets/js/jquery.appear.js"></script>
-
-		<!-- for progress bar end -->
-
-		<!--owl.carousel.js-->
-        <script src="assets/js/owl.carousel.min.js"></script>
+      </div>
+    </section>
 
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-		
-        
-        <!--Custom JS-->
-        <script src="assets/js/custom.js"></script>
-        
-    </body>
-	
+    <!-- ============================================================
+         SKILLS
+    ============================================================ -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-heading reveal"><span class="section-num">04.</span> Skills &amp; Technologies</h2>
+        <div class="skills-block reveal">
+          <div class="skill-group">
+            <h4>LLM &amp; Generative AI</h4>
+            <p>RAG &middot; Multi-Agent Systems &middot; Prompt Engineering &middot; Fine-Tuning &middot; LangChain &middot; LangGraph &middot; Hugging Face &middot; PyTorch &middot; Mistral &middot; Gemini &middot; Anthropic API &middot; Structured Output &middot; LLM Evaluation</p>
+          </div>
+          <div class="skill-group">
+            <h4>ML &amp; Data Science</h4>
+            <p>scikit-learn &middot; XGBoost &middot; LightGBM &middot; SMOTE &middot; PCA &middot; Feature Engineering &middot; Cross-Validation &middot; ROC-AUC &middot; Hypothesis Testing &middot; A/B Testing &middot; ANOVA &middot; spaCy &middot; MLflow</p>
+          </div>
+          <div class="skill-group">
+            <h4>Software &amp; APIs</h4>
+            <p>Python &middot; FastAPI &middot; Django &middot; Pydantic &middot; REST APIs &middot; Microservices &middot; Async I/O &middot; Docker &middot; Kubernetes &middot; Git &middot; CI/CD &middot; React</p>
+          </div>
+          <div class="skill-group">
+            <h4>Retrieval &amp; Data</h4>
+            <p>FAISS &middot; ChromaDB &middot; pgvector &middot; Semantic Search &middot; GTE/BERT Embeddings &middot; SQL &middot; PostgreSQL &middot; Snowflake &middot; Pandas &middot; NumPy &middot; PySpark &middot; Airflow</p>
+          </div>
+          <div class="skill-group">
+            <h4>Cloud, MLOps &amp; BI</h4>
+            <p>AWS (S3, Glue, Lambda, EMR) &middot; Redshift &middot; Model Monitoring &middot; Tableau &middot; Power BI &middot; Matplotlib &middot; Seaborn &middot; Plotly</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         CONTACT
+    ============================================================ -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="contact-inner reveal">
+          <p class="contact-overline">05. What's Next?</p>
+          <h2 class="contact-heading">Get In Touch.</h2>
+          <p class="contact-desc">I'm actively looking for full-time roles in AI Engineering, Machine Learning, and Data Science starting 2026. Whether you have a question, an opportunity, or just want to say hi &mdash; my inbox is always open.</p>
+          <a href="mailto:tammalr@clarkson.edu" class="btn-outline btn-large">Say Hello &#8594;</a>
+          <div class="contact-links">
+            <a href="https://github.com/rahul9908" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/tammalla-rahul" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:tammalr@clarkson.edu"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>Designed &amp; Built by <a href="https://github.com/rahul9908" target="_blank" rel="noopener" class="accent-link">Rahul Tammalla</a></p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
 </html>
