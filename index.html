@@ -85,11 +85,19 @@
       <div class="hero-inner">
         <p class="hero-label fade-up" style="--delay:100ms">Hi, my name is</p>
         <h1 class="hero-name fade-up" style="--delay:200ms">Rahul Tammalla.</h1>
-        <h2 class="hero-tagline fade-up" style="--delay:300ms">I build AI that ships to production.</h2>
+        <h2 class="hero-tagline fade-up" style="--delay:300ms">I build
+          <span class="role-rotator" aria-label="AI systems, data pipelines, ML models, analytics tools, AI agents">
+            <span class="role-track">
+              <span>intelligent systems.</span>
+              <span>data pipelines.</span>
+              <span>ML models.</span>
+              <span>analytics tools.</span>
+              <span>AI agents.</span>
+            </span>
+          </span>
+        </h2>
         <p class="hero-desc fade-up" style="--delay:400ms">
-          I'm an AI Software Engineer completing my M.S. in Applied Data Science at Clarkson University (May 2026).
-          I specialize in building production-grade agentic LLM systems, RAG pipelines, and the
-          FastAPI/AWS backends that put them in front of real users.
+          M.S. Applied Data Science · Clarkson University (May 2026, Merit Scholar) — I work at the intersection of AI engineering, data science, and backend systems. I build things that actually ship.
         </p>
         <div class="hero-cta fade-up" style="--delay:500ms">
           <a href="#work" class="btn-outline btn-magnetic">Check out my work &#8594;</a>
@@ -148,17 +156,15 @@
         <h2 class="section-heading reveal"><span class="section-num">01.</span> About Me</h2>
         <div class="about-inner">
           <div class="about-text reveal">
-            <p>I'm an AI Software Engineer who loves building intelligent systems that actually work in production. Currently completing my M.S. in Applied Data Science at Clarkson University as a Merit Scholar (GPA: 3.8/4.0).</p>
-            <p>My work spans the full ML lifecycle &mdash; from engineering features on 20M+ record datasets to shipping autonomous multi-agent swarms with human-in-the-loop safety gates. I care deeply about reliable, low-latency systems.</p>
-            <p>Outside of code, I'm a Graduate Teaching Assistant for Probability &amp; Statistics, and actively researching human preference modeling in LLM pairwise evaluations.</p>
-            <p>Here are a few technologies I've been working with recently:</p>
+            <p>I'm a data &amp; AI engineer who builds things across the full stack — from wrangling 20M-record datasets and designing ETL pipelines to deploying multi-agent LLM systems with real latency budgets. Currently completing my M.S. in Applied Data Science at Clarkson University (GPA 3.8/4.0, Merit Scholar).</p>
+            <p>My work sits at the intersection of AI, machine learning, data engineering, and analytics. I care about systems that are reliable, interpretable, and actually useful to the people using them.</p>
             <ul class="about-tech-list">
               <li>LangChain / LangGraph</li>
-              <li>FastAPI / Docker</li>
-              <li>RAG Pipelines</li>
-              <li>FAISS / ChromaDB</li>
-              <li>PyTorch / Transformers</li>
-              <li>AWS (S3, Glue, Lambda, EMR)</li>
+              <li>Python / FastAPI</li>
+              <li>RAG + Vector Search</li>
+              <li>AWS / Spark / SQL</li>
+              <li>PyTorch / scikit-learn</li>
+              <li>Tableau / Power BI</li>
             </ul>
             <div class="about-chips">
               <span><i class="fa-solid fa-location-dot"></i> Richmond, VA &middot; Open to Relocation</span>
@@ -195,10 +201,9 @@
               <h3 class="exp-title">AI Engineer Intern <span class="exp-company">@ <a href="#" class="accent-link">I4DI</a></span></h3>
               <p class="exp-date">May 2025 &ndash; August 2025</p>
               <ul class="exp-bullets">
-                <li>Built a multi-agent survey-generation system with <strong>Mistral 7B and Claude</strong>, using structured prompting and JSON-schema validation to fully automate survey authoring workflows, cutting manual effort by <strong>90%</strong>.</li>
-                <li>Designed a <strong>RAG pipeline</strong> with real-time knowledge-base override that prioritized uploaded documents over base-model knowledge, returning context-scoped answers in under <strong>3 seconds</strong> at 95%+ relevance.</li>
-                <li>Optimized <strong>GTE embedding pipelines</strong> in PyTorch with batched inference and async data loading, cutting embedding latency by <strong>42%</strong> (5.1s &rarr; 2.9s) and lifting Precision@K by 30%.</li>
-                <li>Shipped <strong>FAISS-backed semantic search</strong> with hybrid retrieval delivering sub-second query response across all analytics and real-time workloads.</li>
+                <li>Built a <strong>multi-agent survey system</strong> (Mistral 7B + Claude) with structured prompting and JSON-schema validation — cut manual authoring effort by <strong>90%</strong>.</li>
+                <li>Designed a <strong>RAG pipeline</strong> with real-time document override returning context-scoped answers in under <strong>3 seconds</strong> at 95%+ relevance.</li>
+                <li>Optimized <strong>GTE embedding pipelines</strong> in PyTorch with batched async inference — cut latency <strong>42%</strong> (5.1 s → 2.9 s), lifted Precision@K 30%.</li>
               </ul>
             </div>
 
@@ -206,9 +211,8 @@
               <h3 class="exp-title">ML Research Assistant <span class="exp-company">@ <a href="#" class="accent-link">Clarkson University</a></span></h3>
               <p class="exp-date">January 2025 &ndash; July 2025</p>
               <ul class="exp-bullets">
-                <li>Analyzed <strong>20M+ NEMSIS emergency records</strong> with statistical modeling and ML, engineering 70+ features to surface 15 predictors of stroke-related 911 delays &mdash; projected <strong>40% response time reduction</strong>.</li>
-                <li>Built Python/SQL/PySpark pipelines resolving <strong>1M+ missing values</strong> to 95% data quality, then trained Random Forest, XGBoost, LightGBM, SVM models lifting accuracy by <strong>20%</strong>.</li>
-                <li>Built an <strong>NLP extraction pipeline</strong> with spaCy, BeautifulSoup, and regex structuring 300+ normalized entities, boosting downstream data quality by 45%.</li>
+                <li>Analyzed <strong>20M+ NEMSIS emergency records</strong>, engineered 70+ features surfacing 15 stroke-delay predictors — projected <strong>40% response time reduction</strong>.</li>
+                <li>Built Python / SQL / PySpark pipelines resolving <strong>1M+ missing values</strong>, trained XGBoost / LightGBM / SVM models lifting accuracy <strong>20%</strong>.</li>
               </ul>
             </div>
 
@@ -216,8 +220,7 @@
               <h3 class="exp-title">Graduate Teaching Assistant <span class="exp-company">@ <a href="#" class="accent-link">Clarkson University</a></span></h3>
               <p class="exp-date">August 2024 &ndash; Present</p>
               <ul class="exp-bullets">
-                <li>Teaching and grading for <strong>Graduate Probability &amp; Statistics</strong>, supporting 40+ students with statistical modeling and inference concepts.</li>
-                <li>Holding office hours, grading assignments, and reinforcing key concepts in hypothesis testing, regression, and statistical inference.</li>
+                <li>Supporting <strong>40+ graduate students</strong> in Probability &amp; Statistics — hypothesis testing, regression, and statistical inference.</li>
               </ul>
             </div>
 
@@ -225,9 +228,8 @@
               <h3 class="exp-title">Data Engineer <span class="exp-company">@ <a href="#" class="accent-link">Cognizant Technology Solutions</a></span></h3>
               <p class="exp-date">October 2021 &ndash; August 2024</p>
               <ul class="exp-bullets">
-                <li>Built <strong>Airflow/SQL ETL pipelines</strong> on Snowflake/Redshift processing 5M+ records daily, lifting reliability by <strong>70%</strong> and query performance by 30%.</li>
-                <li>Engineered cloud-native <strong>AWS (S3, Glue, Lambda, EMR)</strong> pipelines handling 1M+ daily transactions at <strong>95%+ uptime</strong> via CI/CD on Kubernetes.</li>
-                <li>Built <strong>5+ Tableau/Power BI dashboards</strong> integrating 3+ source systems, cutting manual reporting effort by 30%.</li>
+                <li>Built <strong>Airflow / SQL ETL pipelines</strong> on Snowflake / Redshift processing 5M+ records daily at <strong>95%+ uptime</strong> via CI/CD on Kubernetes.</li>
+                <li>Delivered <strong>5+ Tableau / Power BI dashboards</strong> integrating 3 source systems — cut manual reporting 30%, enabled self-serve analytics.</li>
               </ul>
             </div>
 
@@ -247,16 +249,47 @@
         <!-- Featured projects -->
         <div class="featured-list">
 
-          <!-- Featured 1: DevOps Agent Swarm (image right) -->
+          <!-- Featured 1: 3D Interactive Portfolio (live iframe, image right) -->
           <div class="fp reveal">
+            <div class="fp-content">
+              <p class="fp-overline">Featured Experience</p>
+              <h3 class="fp-title"><a href="https://rahul3dportfolio.vercel.app/" target="_blank" rel="noopener">3D Interactive Portfolio</a></h3>
+              <div class="fp-desc">
+                <p>A fully interactive 3D world — navigate through scenes, discover projects, and experience a portfolio built as a game. Try it directly in the preview or open full-screen.</p>
+              </div>
+              <ul class="fp-tech">
+                <li>Three.js</li><li>WebGL</li><li>3D Design</li><li>Interactive</li>
+              </ul>
+              <div class="fp-links">
+                <a href="https://rahul3dportfolio.vercel.app/" target="_blank" rel="noopener" aria-label="Open full screen"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="fp-image">
+              <div class="fp-game-wrapper">
+                <iframe
+                  src="https://rahul3dportfolio.vercel.app/"
+                  class="fp-game-frame"
+                  title="3D Interactive Portfolio — click to explore"
+                  loading="lazy"
+                  allowfullscreen>
+                </iframe>
+                <a href="https://rahul3dportfolio.vercel.app/" target="_blank" rel="noopener" class="fp-game-expand">
+                  <i class="fa-solid fa-expand"></i> Open full screen
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Featured 2: DevOps Agent Swarm (image left) -->
+          <div class="fp fp-reverse reveal">
             <div class="fp-content">
               <p class="fp-overline">Featured Project</p>
               <h3 class="fp-title"><a href="https://github.com/rahul9908/DevOps-Agent-Swarm" target="_blank" rel="noopener">DevOps Agent Swarm</a></h3>
               <div class="fp-desc">
-                <p>An autonomous 6-agent swarm &mdash; Observer, Diagnoser, Remediator, Safety, Orchestrator, Learner &mdash; with LLM-powered root-cause diagnosis over NATS JetStream. Executes incident remediation via a formal FSM lifecycle with human-in-the-loop safety approval gates across complex microservices failure scenarios.</p>
+                <p>Autonomous 6-agent swarm (Observer, Diagnoser, Remediator, Safety, Orchestrator, Learner) with LLM-powered root-cause diagnosis over NATS JetStream — incident remediation via FSM with human-in-the-loop approval gates.</p>
               </div>
               <ul class="fp-tech">
-                <li>LangGraph</li><li>NATS JetStream</li><li>FastAPI</li><li>Docker</li><li>Gemini</li><li>Python</li>
+                <li>LangGraph</li><li>NATS JetStream</li><li>FastAPI</li><li>Docker</li><li>Gemini</li>
               </ul>
               <div class="fp-links">
                 <a href="https://github.com/rahul9908/DevOps-Agent-Swarm" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
@@ -274,33 +307,6 @@
             </div>
           </div>
 
-          <!-- Featured 2: MedGraph AI (image left) -->
-          <div class="fp fp-reverse reveal">
-            <div class="fp-content">
-              <p class="fp-overline">Featured Project</p>
-              <h3 class="fp-title"><a href="https://github.com/rahul9908/Medical-AI-search-assistant" target="_blank" rel="noopener">MedGraph AI</a></h3>
-              <div class="fp-desc">
-                <p>Multi-agent medical records assistant with 5-agent orchestration (Router, Retriever, Context Builder, Citation Extractor, Answer Generator). Combines semantic and keyword hybrid search with evidence-backed citations and confidence scores across 50 patient records.</p>
-              </div>
-              <ul class="fp-tech">
-                <li>LangChain</li><li>LangGraph</li><li>ChromaDB</li><li>Mistral</li><li>FastAPI</li>
-              </ul>
-              <div class="fp-links">
-                <a href="https://github.com/rahul9908/Medical-AI-search-assistant" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-            <div class="fp-image">
-              <a href="https://github.com/rahul9908/Medical-AI-search-assistant" target="_blank" rel="noopener">
-                <div class="fp-img-placeholder" style="background: linear-gradient(135deg, #0c2340 0%, #0c4a6e 50%, #0a192f 100%);">
-                  <div class="fp-img-label">
-                    <i class="fa-solid fa-brain"></i>
-                    <span>RAG + Multi-Agent</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
         </div>
 
         <!-- Other noteworthy projects -->
@@ -311,12 +317,24 @@
             <div class="card-top">
               <i class="fa-solid fa-folder-open card-folder"></i>
               <div class="card-links">
+                <a href="https://github.com/rahul9908/Medical-AI-search-assistant" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <h4 class="card-title">MedGraph AI</h4>
+            <p class="card-desc">5-agent medical records assistant combining hybrid semantic + keyword search with evidence-backed citations across 50 patient records.</p>
+            <ul class="card-tech"><li>LangGraph</li><li>ChromaDB</li><li>Mistral</li><li>FastAPI</li></ul>
+          </div>
+
+          <div class="other-card reveal">
+            <div class="card-top">
+              <i class="fa-solid fa-folder-open card-folder"></i>
+              <div class="card-links">
                 <a href="https://github.com/rahul9908/clinical-consent-NER-Project" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
               </div>
             </div>
             <h4 class="card-title">Clinical Consent NER</h4>
-            <p class="card-desc">Fine-tuned Transformer NER on clinical consent docs reaching 85% F1 across 5 entity types and 88% risk classification accuracy. Automates consent-language risk detection at scale.</p>
-            <ul class="card-tech"><li>spaCy</li><li>Transformers</li><li>scikit-learn</li><li>Python</li></ul>
+            <p class="card-desc">Fine-tuned Transformer NER on clinical consent docs — 85% F1, 88% risk-classification accuracy. Automates legal language review at scale.</p>
+            <ul class="card-tech"><li>spaCy</li><li>Transformers</li><li>scikit-learn</li></ul>
           </div>
 
           <div class="other-card reveal">
@@ -328,8 +346,8 @@
               </div>
             </div>
             <h4 class="card-title">EscapeRL &mdash; Q-Learning Maze</h4>
-            <p class="card-desc">Interactive Q-Learning agent navigating a 15&times;15 dynamic maze. Real-time training visualization, configurable hyperparameters, custom map editor. 80%+ policy convergence.</p>
-            <ul class="card-tech"><li>React</li><li>Q-Learning</li><li>Tailwind CSS</li><li>JavaScript</li></ul>
+            <p class="card-desc">Interactive RL agent navigating a 15×15 dynamic maze with real-time training visualization and a live map editor. 80%+ policy convergence.</p>
+            <ul class="card-tech"><li>React</li><li>Q-Learning</li><li>JavaScript</li></ul>
           </div>
 
           <div class="other-card reveal">
@@ -339,20 +357,8 @@
                 <a href="https://github.com/rahul9908" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
               </div>
             </div>
-            <h4 class="card-title">Parkinson's Disease Detection</h4>
-            <p class="card-desc">Supervised pipeline (SVM, RF, MLP) with PCA and SMOTE oversampling achieving 95%+ accuracy on a highly imbalanced clinical voice feature dataset.</p>
-            <ul class="card-tech"><li>Python</li><li>SVM</li><li>PCA</li><li>SMOTE</li><li>scikit-learn</li></ul>
-          </div>
-
-          <div class="other-card reveal">
-            <div class="card-top">
-              <i class="fa-solid fa-folder-open card-folder"></i>
-              <div class="card-links">
-                <a href="https://github.com/rahul9908" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-            <h4 class="card-title">NYC Public Safety System</h4>
-            <p class="card-desc">Processed 25GB+ NYC 311/NYPD data with Python/SQL and scikit-learn, surfacing 12+ spatial safety patterns at 82%+ accuracy through interactive Folium maps and a live FastAPI dashboard.</p>
+            <h4 class="card-title">NYC Public Safety Analytics</h4>
+            <p class="card-desc">25GB+ NYC 311/NYPD dataset processed with Python/SQL — 12+ spatial safety patterns at 82%+ accuracy, surfaced via Folium maps and a FastAPI dashboard.</p>
             <ul class="card-tech"><li>Python</li><li>SQL</li><li>FastAPI</li><li>Folium</li></ul>
           </div>
 
@@ -364,8 +370,8 @@
               </div>
             </div>
             <h4 class="card-title">News Scraper &amp; Summarizer</h4>
-            <p class="card-desc">End-to-end NLP pipeline using DistilBERT for classification and T5 for abstractive summarization of news articles, delivered through a real-time Streamlit interface.</p>
-            <ul class="card-tech"><li>DistilBERT</li><li>T5</li><li>Streamlit</li><li>Python</li></ul>
+            <p class="card-desc">DistilBERT classification + T5 abstractive summarization pipeline with a real-time Streamlit interface for news at scale.</p>
+            <ul class="card-tech"><li>DistilBERT</li><li>T5</li><li>Streamlit</li></ul>
           </div>
 
           <div class="other-card reveal">
@@ -376,8 +382,8 @@
               </div>
             </div>
             <h4 class="card-title">US Accident Insights</h4>
-            <p class="card-desc">Statistical analysis of 4.2M+ US traffic accident records using R and R Markdown, surfacing geospatial and temporal patterns with reproducible analysis workflows.</p>
-            <ul class="card-tech"><li>R</li><li>R Markdown</li><li>ggplot2</li><li>Statistical Analysis</li></ul>
+            <p class="card-desc">Geospatial + temporal analysis of 4.2M+ traffic records in R — reproducible Markdown workflows surfacing key risk patterns.</p>
+            <ul class="card-tech"><li>R</li><li>ggplot2</li><li>Statistical Analysis</li></ul>
           </div>
 
         </div>
@@ -395,48 +401,42 @@
         <div class="skills-block reveal">
 
           <div class="skill-category">
-            <p class="skill-cat-label">LLM &amp; Generative AI</p>
+            <p class="skill-cat-label">AI &amp; LLMs</p>
             <div class="skill-tags">
-              <span>RAG</span><span>LangChain</span><span>LangGraph</span><span>Multi-Agent</span>
-              <span>Prompt Engineering</span><span>Fine-Tuning</span><span>Hugging Face</span>
-              <span>PyTorch</span><span>Mistral</span><span>Gemini</span><span>Anthropic API</span>
-              <span>LLM Evaluation</span>
+              <span>RAG</span><span>LangChain</span><span>LangGraph</span><span>Multi-Agent Systems</span>
+              <span>Prompt Engineering</span><span>Fine-Tuning</span><span>PyTorch</span><span>LLM Evaluation</span>
             </div>
           </div>
 
           <div class="skill-category">
-            <p class="skill-cat-label">ML &amp; Data Science</p>
+            <p class="skill-cat-label">Machine Learning</p>
             <div class="skill-tags">
-              <span>scikit-learn</span><span>XGBoost</span><span>LightGBM</span><span>SMOTE</span>
-              <span>PCA</span><span>Feature Engineering</span><span>spaCy</span><span>MLflow</span>
-              <span>A/B Testing</span><span>Hypothesis Testing</span><span>ANOVA</span>
+              <span>scikit-learn</span><span>XGBoost</span><span>LightGBM</span>
+              <span>Feature Engineering</span><span>spaCy</span><span>MLflow</span><span>A/B Testing</span>
             </div>
           </div>
 
           <div class="skill-category">
-            <p class="skill-cat-label">Software &amp; Backend</p>
+            <p class="skill-cat-label">Engineering &amp; APIs</p>
             <div class="skill-tags">
-              <span>Python</span><span>FastAPI</span><span>Django</span><span>Pydantic</span>
-              <span>REST APIs</span><span>Async I/O</span><span>Docker</span>
-              <span>Kubernetes</span><span>CI/CD</span><span>React</span>
+              <span>Python</span><span>FastAPI</span><span>Docker</span>
+              <span>Kubernetes</span><span>REST APIs</span><span>CI/CD</span><span>React</span>
             </div>
           </div>
 
           <div class="skill-category">
-            <p class="skill-cat-label">Retrieval &amp; Data</p>
+            <p class="skill-cat-label">Data &amp; Retrieval</p>
             <div class="skill-tags">
-              <span>FAISS</span><span>ChromaDB</span><span>pgvector</span><span>Semantic Search</span>
-              <span>SQL</span><span>PostgreSQL</span><span>Snowflake</span><span>PySpark</span>
-              <span>Airflow</span><span>Pandas</span><span>NumPy</span>
+              <span>FAISS</span><span>ChromaDB</span><span>SQL</span><span>Snowflake</span>
+              <span>PySpark</span><span>Airflow</span><span>Pandas</span>
             </div>
           </div>
 
           <div class="skill-category">
-            <p class="skill-cat-label">Cloud &amp; MLOps</p>
+            <p class="skill-cat-label">Cloud &amp; Analytics</p>
             <div class="skill-tags">
-              <span>AWS S3</span><span>AWS Glue</span><span>Lambda</span><span>EMR</span>
-              <span>Redshift</span><span>Model Monitoring</span><span>Tableau</span>
-              <span>Power BI</span><span>Plotly</span>
+              <span>AWS (S3 · Glue · Lambda · EMR)</span><span>Redshift</span>
+              <span>Tableau</span><span>Power BI</span><span>Plotly</span>
             </div>
           </div>
 

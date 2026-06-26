@@ -428,6 +428,34 @@ body.cursor-hover .cursor-dot { transform: translate(-50%, -50%) scale(0); }
 
 .hero-cta { margin: 0 0 48px 4px; }
 
+/* Rotating role words in hero tagline */
+.role-rotator {
+  display: inline-block;
+  overflow: hidden;
+  height: 1.05em;
+  vertical-align: bottom;
+}
+.role-track {
+  display: flex;
+  flex-direction: column;
+  animation: roleRotate 12s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
+}
+.role-track span {
+  display: block;
+  height: 1.05em;
+  line-height: 1.05em;
+  white-space: nowrap;
+  color: var(--accent-3);
+}
+@keyframes roleRotate {
+  0%,   17%  { transform: translateY(0); }
+  20%,  37%  { transform: translateY(-20%); }
+  40%,  57%  { transform: translateY(-40%); }
+  60%,  77%  { transform: translateY(-60%); }
+  80%,  97%  { transform: translateY(-80%); }
+  100%        { transform: translateY(0); }
+}
+
 
 /* ============================================================
    MARQUEE
@@ -712,10 +740,41 @@ body.cursor-hover .cursor-dot { transform: translate(-50%, -50%) scale(0); }
 .fp-img-label i    { font-size: 42px; }
 .fp-img-label span { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; }
 
+/* Live game iframe — 3D portfolio featured project */
+.fp-game-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+.fp-game-frame {
+  width: 100%; height: 100%;
+  border: none; display: block;
+}
+.fp-game-expand {
+  position: absolute;
+  bottom: 12px; right: 12px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.85);
+  background: rgba(0, 0, 0, 0.55);
+  padding: 6px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  backdrop-filter: blur(6px);
+  transition: var(--transition);
+  display: flex; align-items: center; gap: 6px;
+  letter-spacing: 0.04em;
+}
+.fp-game-expand:hover { background: rgba(0, 0, 0, 0.75); color: #fff; }
+
 @media (max-width: 768px) {
   .fp { display: flex; flex-direction: column; gap: 20px; }
   .fp-content, .fp-reverse .fp-content { text-align: left; }
   .fp-reverse .fp-tech, .fp-reverse .fp-links { justify-content: flex-start; }
+  .fp-game-wrapper { aspect-ratio: 4 / 3; }
 }
 
 
