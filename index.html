@@ -141,7 +141,7 @@
         </div>
         <div class="stat-div"></div>
         <div class="stat">
-          <p class="stat-val"><span class="stat-num" data-target="3">0</span><span class="stat-suf">yrs</span></p>
+          <p class="stat-val"><span class="stat-num" data-target="4">0</span><span class="stat-suf">+yrs</span></p>
           <p class="stat-label">in production</p>
         </div>
       </div>
@@ -176,6 +176,43 @@
               <img src="assets/images/about/Photo.jpg" alt="Rahul Tammalla">
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         WHAT I BUILD
+    ============================================================ -->
+    <section class="section section-dark build-section">
+      <div class="container">
+        <h2 class="section-heading reveal" style="color: var(--text-inv);">What I Build</h2>
+        <div class="build-grid">
+
+          <div class="build-card reveal">
+            <div class="build-icon"><i class="fa-solid fa-comments"></i></div>
+            <h3>AI Chatbots &amp; RAG Systems</h3>
+            <p>Custom knowledge assistants that let users query documents, databases, or internal wikis in plain English. Hybrid semantic + keyword search, vector stores, and LLM response generation — from customer support bots to internal ops tools.</p>
+          </div>
+
+          <div class="build-card reveal">
+            <div class="build-icon"><i class="fa-solid fa-robot"></i></div>
+            <h3>Autonomous AI Agents</h3>
+            <p>Multi-agent systems that plan, route, and self-correct across complex workflows — think monitoring pipelines that diagnose and fix themselves, research agents that synthesize across sources, or orchestrators that coordinate specialized sub-agents.</p>
+          </div>
+
+          <div class="build-card reveal">
+            <div class="build-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <h3>ML Models &amp; Pipelines</h3>
+            <p>End-to-end machine learning from raw feature engineering to deployed predictions. Classification, NLP, anomaly detection, and forecasting — with proper evaluation, versioning, and production monitoring baked in.</p>
+          </div>
+
+          <div class="build-card reveal">
+            <div class="build-icon"><i class="fa-solid fa-database"></i></div>
+            <h3>Data Engineering &amp; Analytics</h3>
+            <p>ETL pipelines, cloud data warehouses, and BI dashboards that turn messy raw data into reliable business signals. Snowflake, Spark, Airflow, Tableau — whatever the stack needs to make the data actually usable.</p>
+          </div>
+
         </div>
       </div>
     </section>
@@ -249,44 +286,13 @@
         <!-- Featured projects -->
         <div class="featured-list">
 
-          <!-- Featured 1: 3D Interactive Portfolio (live iframe, image right) -->
+          <!-- Featured 1: DevOps Agent Swarm (image right) -->
           <div class="fp reveal">
-            <div class="fp-content">
-              <p class="fp-overline">Featured Experience</p>
-              <h3 class="fp-title"><a href="https://rahul3dportfolio.vercel.app/" target="_blank" rel="noopener">3D Interactive Portfolio</a></h3>
-              <div class="fp-desc">
-                <p>A fully interactive 3D world — navigate through scenes, discover projects, and experience a portfolio built as a game. Try it directly in the preview or open full-screen.</p>
-              </div>
-              <ul class="fp-tech">
-                <li>Three.js</li><li>WebGL</li><li>3D Design</li><li>Interactive</li>
-              </ul>
-              <div class="fp-links">
-                <a href="https://rahul3dportfolio.vercel.app/" target="_blank" rel="noopener" aria-label="Open full screen"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-              </div>
-            </div>
-            <div class="fp-image">
-              <div class="fp-game-wrapper">
-                <iframe
-                  src="https://rahul3dportfolio.vercel.app/"
-                  class="fp-game-frame"
-                  title="3D Interactive Portfolio — click to explore"
-                  loading="lazy"
-                  allowfullscreen>
-                </iframe>
-                <a href="https://rahul3dportfolio.vercel.app/" target="_blank" rel="noopener" class="fp-game-expand">
-                  <i class="fa-solid fa-expand"></i> Open full screen
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Featured 2: DevOps Agent Swarm (image left) -->
-          <div class="fp fp-reverse reveal">
             <div class="fp-content">
               <p class="fp-overline">Featured Project</p>
               <h3 class="fp-title"><a href="https://github.com/rahul9908/DevOps-Agent-Swarm" target="_blank" rel="noopener">DevOps Agent Swarm</a></h3>
               <div class="fp-desc">
-                <p>Autonomous 6-agent swarm (Observer, Diagnoser, Remediator, Safety, Orchestrator, Learner) with LLM-powered root-cause diagnosis over NATS JetStream — incident remediation via FSM with human-in-the-loop approval gates.</p>
+                <p>Autonomous 6-agent swarm — Observer, Diagnoser, Remediator, Safety, Orchestrator, Learner — with LLM-powered root-cause diagnosis over NATS JetStream. Incident remediation via FSM with human-in-the-loop approval gates across complex failure scenarios.</p>
               </div>
               <ul class="fp-tech">
                 <li>LangGraph</li><li>NATS JetStream</li><li>FastAPI</li><li>Docker</li><li>Gemini</li>
@@ -301,6 +307,33 @@
                   <div class="fp-img-label">
                     <i class="fa-solid fa-network-wired"></i>
                     <span>Multi-Agent Swarm</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Featured 2: MedGraph AI (image left) -->
+          <div class="fp fp-reverse reveal">
+            <div class="fp-content">
+              <p class="fp-overline">Featured Project</p>
+              <h3 class="fp-title"><a href="https://github.com/rahul9908/Medical-AI-search-assistant" target="_blank" rel="noopener">MedGraph AI</a></h3>
+              <div class="fp-desc">
+                <p>5-agent medical records assistant with hybrid semantic + keyword search, evidence-backed citations, and confidence scoring across 50 patient records. Router → Retriever → Context Builder → Citation Extractor → Answer Generator.</p>
+              </div>
+              <ul class="fp-tech">
+                <li>LangChain</li><li>LangGraph</li><li>ChromaDB</li><li>Mistral</li><li>FastAPI</li>
+              </ul>
+              <div class="fp-links">
+                <a href="https://github.com/rahul9908/Medical-AI-search-assistant" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <div class="fp-image">
+              <a href="https://github.com/rahul9908/Medical-AI-search-assistant" target="_blank" rel="noopener">
+                <div class="fp-img-placeholder" style="background: linear-gradient(135deg, #0c2340 0%, #0c4a6e 50%, #0a192f 100%);">
+                  <div class="fp-img-label">
+                    <i class="fa-solid fa-brain"></i>
+                    <span>RAG + Multi-Agent</span>
                   </div>
                 </div>
               </a>
@@ -437,6 +470,47 @@
             <div class="skill-tags">
               <span>AWS (S3 · Glue · Lambda · EMR)</span><span>Redshift</span>
               <span>Tableau</span><span>Power BI</span><span>Plotly</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         MY WORLD — 3D Portfolio
+    ============================================================ -->
+    <section class="section section-light world-section">
+      <div class="container">
+        <div class="world-inner">
+
+          <div class="world-text reveal">
+            <p class="world-overline">Interactive Experience</p>
+            <h2 class="world-title">Explore My 3D World</h2>
+            <p class="world-desc">I didn't just build a portfolio — I built a world you can walk around in. Navigate through 3D scenes, discover projects by exploring the environment, and experience a story that goes beyond bullet points. Built with Three.js and WebGL; runs right in your browser, no install needed.</p>
+            <ul class="world-features">
+              <li><i class="fa-solid fa-gamepad"></i> Walk &amp; explore interactive scenes</li>
+              <li><i class="fa-solid fa-cube"></i> Discover projects spatially in 3D</li>
+              <li><i class="fa-solid fa-globe"></i> Runs in-browser — no download</li>
+            </ul>
+            <a href="https://rahul3dportfolio.vercel.app/" target="_blank" rel="noopener" class="btn-primary world-cta">
+              Launch 3D Portfolio <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+
+          <div class="world-preview reveal">
+            <div class="world-frame">
+              <iframe
+                src="https://rahul3dportfolio.vercel.app/"
+                class="world-iframe"
+                title="3D Interactive Portfolio — explore the world"
+                loading="lazy"
+                allowfullscreen>
+              </iframe>
+              <a href="https://rahul3dportfolio.vercel.app/" target="_blank" rel="noopener" class="world-expand-btn">
+                <i class="fa-solid fa-expand"></i> Full screen
+              </a>
             </div>
           </div>
 

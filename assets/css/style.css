@@ -740,41 +740,10 @@ body.cursor-hover .cursor-dot { transform: translate(-50%, -50%) scale(0); }
 .fp-img-label i    { font-size: 42px; }
 .fp-img-label span { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; }
 
-/* Live game iframe — 3D portfolio featured project */
-.fp-game-wrapper {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 10;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
-}
-.fp-game-frame {
-  width: 100%; height: 100%;
-  border: none; display: block;
-}
-.fp-game-expand {
-  position: absolute;
-  bottom: 12px; right: 12px;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: rgba(255, 255, 255, 0.85);
-  background: rgba(0, 0, 0, 0.55);
-  padding: 6px 14px;
-  border-radius: 6px;
-  text-decoration: none;
-  backdrop-filter: blur(6px);
-  transition: var(--transition);
-  display: flex; align-items: center; gap: 6px;
-  letter-spacing: 0.04em;
-}
-.fp-game-expand:hover { background: rgba(0, 0, 0, 0.75); color: #fff; }
-
 @media (max-width: 768px) {
   .fp { display: flex; flex-direction: column; gap: 20px; }
   .fp-content, .fp-reverse .fp-content { text-align: left; }
   .fp-reverse .fp-tech, .fp-reverse .fp-links { justify-content: flex-start; }
-  .fp-game-wrapper { aspect-ratio: 4 / 3; }
 }
 
 
@@ -897,4 +866,172 @@ body.cursor-hover .cursor-dot { transform: translate(-50%, -50%) scale(0); }
 
 @media (max-width: 480px) {
   .skills-block { gap: 32px; }
+}
+
+
+/* ============================================================
+   WHAT I BUILD (dark section)
+============================================================ */
+.build-section { padding-top: 0; padding-bottom: 100px; }
+.build-section .section-heading { color: var(--text-inv); }
+
+.build-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 56px;
+}
+
+.build-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 12px;
+  padding: 36px 32px;
+  transition: border-color 0.3s var(--ease), transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+.build-card:hover {
+  border-color: rgba(129, 140, 248, 0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(99, 102, 241, 0.1);
+}
+
+.build-icon {
+  font-size: 28px;
+  color: var(--accent-2);
+  margin-bottom: 20px;
+  width: 52px; height: 52px;
+  background: rgba(129, 140, 248, 0.1);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.build-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-inv);
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+}
+
+.build-card p {
+  font-size: 15px;
+  color: var(--text-inv-2);
+  line-height: 1.75;
+}
+
+@media (max-width: 768px) {
+  .build-grid { grid-template-columns: 1fr; }
+  .build-card { padding: 28px 24px; }
+}
+
+
+/* ============================================================
+   MY WORLD — 3D Portfolio (light section)
+============================================================ */
+.world-section { padding: 100px 0; }
+
+.world-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 72px;
+  align-items: center;
+}
+
+.world-overline {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.world-title {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.world-desc {
+  font-size: 16px;
+  color: var(--text-2);
+  line-height: 1.8;
+  margin-bottom: 28px;
+  max-width: 440px;
+}
+
+.world-features {
+  list-style: none;
+  margin: 0 0 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.world-features li {
+  font-size: 14px;
+  color: var(--text-2);
+  display: flex; align-items: center; gap: 10px;
+}
+.world-features li i { color: var(--accent); font-size: 13px; width: 16px; }
+
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 14px 30px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 6px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: background 0.2s var(--ease), transform 0.2s var(--ease), box-shadow 0.2s var(--ease);
+}
+.btn-primary:hover {
+  background: var(--accent-2);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.35);
+  color: #fff;
+}
+
+/* The iframe frame */
+.world-frame {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.15);
+  aspect-ratio: 16 / 10;
+  border: 1px solid var(--cream-border);
+}
+.world-iframe {
+  width: 100%; height: 100%;
+  border: none; display: block;
+}
+.world-expand-btn {
+  position: absolute;
+  bottom: 14px; right: 14px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  padding: 7px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: flex; align-items: center; gap: 6px;
+  letter-spacing: 0.04em;
+  transition: var(--transition);
+}
+.world-expand-btn:hover { background: rgba(0, 0, 0, 0.75); color: #fff; }
+
+@media (max-width: 900px) {
+  .world-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .world-frame { aspect-ratio: 4 / 3; }
 }
