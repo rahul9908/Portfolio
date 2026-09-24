@@ -700,6 +700,7 @@ body.cursor-hover .cursor-dot { transform: translate(-50%, -50%) scale(0); }
   margin-bottom: 18px;
 }
 .fp-desc p { font-size: 15px; color: var(--text-2); line-height: 1.75; }
+.fp-desc p + p { margin-top: 14px; }
 
 .fp-tech { list-style: none; display: flex; flex-wrap: wrap; gap: 8px 14px; margin-bottom: 14px; }
 .fp-tech li { font-family: var(--font-mono); font-size: 12px; color: var(--text-3); }
@@ -926,165 +927,84 @@ body.cursor-hover .cursor-dot { transform: translate(-50%, -50%) scale(0); }
 
 
 /* ============================================================
-   MY WORLD — 3D Portfolio (dark section, high on page)
+   RESEARCH NOTE (work section)
 ============================================================ */
-.world-section { padding: 90px 0 110px; }
-
-.world-eyebrow { margin-bottom: 44px; }
-.world-badge {
-  display: inline-flex; align-items: center; gap: 8px;
+.research-note {
+  margin-top: 64px;
+  padding: 32px 36px;
+  background: var(--cream-card);
+  border: 1px solid var(--cream-border);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+}
+.research-label {
   font-family: var(--font-mono);
-  font-size: 12px;
-  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--accent-3);
-  background: rgba(196, 181, 253, 0.1);
-  border: 1px solid rgba(196, 181, 253, 0.25);
-  padding: 6px 16px;
-  border-radius: 100px;
+  color: var(--accent);
+  margin-bottom: 12px;
 }
-
-.world-inner {
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: 64px;
-  align-items: center;
-}
-
-.world-overline {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--accent-2);
-  margin-bottom: 14px;
-}
-
-.world-title {
+.research-label i { margin-right: 6px; }
+.research-title {
   font-family: var(--font-display);
-  font-size: clamp(24px, 3.2vw, 38px);
-  font-weight: 800;
-  color: var(--text-inv);
-  letter-spacing: -0.03em;
-  line-height: 1.15;
-  margin-bottom: 18px;
-}
-
-.world-desc {
-  font-size: 15px;
-  color: var(--text-inv-2);
-  line-height: 1.8;
-  margin-bottom: 32px;
-}
-.world-desc strong { color: var(--accent-3); font-weight: 600; }
-
-/* RAG pipeline flow */
-.rag-flow {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  margin-bottom: 28px;
-  padding: 20px;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid var(--dark-border);
-  border-radius: 10px;
-}
-.rag-step {
-  flex: 1;
-  text-align: center;
-}
-.rag-num {
-  display: block;
-  font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 0.12em;
-  color: var(--accent-2);
+  font-size: 1.22rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--text);
   margin-bottom: 6px;
 }
-.rag-step p {
-  font-size: 12px;
+.research-meta {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--text-3);
+  margin-bottom: 14px;
+}
+.research-desc {
+  font-size: 0.93rem;
+  line-height: 1.65;
+  color: var(--text-2);
+  max-width: 70ch;
+}
+.research-desc strong { color: var(--text); font-weight: 600; }
+
+@media (max-width: 700px) {
+  .research-note { padding: 26px 22px; margin-top: 48px; }
+}
+
+
+/* ============================================================
+   CERTIFICATIONS ROW (skills section, dark)
+============================================================ */
+.certs-row {
+  margin-top: 52px;
+  padding-top: 32px;
+  border-top: 1px solid var(--dark-border);
+}
+.certs-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-inv-3);
+  margin-bottom: 16px;
+}
+.certs-list { display: flex; flex-wrap: wrap; gap: 12px; }
+.cert-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 16px;
+  font-size: 0.82rem;
   color: var(--text-inv-2);
-  line-height: 1.5;
-  margin: 0;
-}
-.rag-arrow {
-  color: rgba(129, 140, 248, 0.4);
-  font-size: 13px;
-  padding-top: 24px;
-  flex-shrink: 0;
-}
-
-/* Tech tags under RAG flow */
-.world-tech-tags {
-  list-style: none;
-  display: flex; flex-wrap: wrap; gap: 8px;
-  margin-bottom: 32px;
-}
-.world-tech-tags li {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--accent-3);
-  background: rgba(196, 181, 253, 0.08);
-  border: 1px solid rgba(196, 181, 253, 0.2);
-  padding: 4px 12px;
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
   border-radius: 100px;
-  letter-spacing: 0.04em;
-}
-
-.btn-primary {
-  display: inline-flex; align-items: center; gap: 10px;
-  padding: 14px 30px;
-  background: var(--accent);
-  color: #fff;
-  border-radius: 6px;
-  font-family: var(--font-mono);
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  transition: background 0.2s var(--ease), transform 0.2s var(--ease), box-shadow 0.2s var(--ease);
-}
-.btn-primary:hover {
-  background: var(--accent-2);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.4);
-  color: #fff;
-}
-
-/* Live iframe frame */
-.world-frame {
-  position: relative;
-  border-radius: 14px;
-  overflow: hidden;
-  aspect-ratio: 16 / 10;
-  border: 1px solid rgba(129, 140, 248, 0.2);
-  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(129,140,248,0.1);
-}
-.world-iframe {
-  width: 100%; height: 100%;
-  border: none; display: block;
-}
-.world-expand-btn {
-  position: absolute;
-  bottom: 14px; right: 14px;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: rgba(255, 255, 255, 0.9);
-  background: rgba(0, 0, 0, 0.55);
-  backdrop-filter: blur(8px);
-  padding: 7px 14px;
-  border-radius: 6px;
-  text-decoration: none;
-  display: flex; align-items: center; gap: 6px;
-  letter-spacing: 0.04em;
   transition: var(--transition);
 }
-.world-expand-btn:hover { background: rgba(0, 0, 0, 0.8); color: #fff; }
-
-@media (max-width: 900px) {
-  .world-inner { grid-template-columns: 1fr; gap: 40px; }
-  .world-preview { order: -1; }
-  .world-frame { aspect-ratio: 4 / 3; }
-  .rag-flow { flex-direction: column; }
-  .rag-arrow { padding: 0; transform: rotate(90deg); }
+.cert-chip i { color: var(--accent-2); font-size: 0.78rem; }
+.cert-chip:hover {
+  color: var(--text-inv);
+  border-color: var(--accent);
+  transform: translateY(-2px);
 }
