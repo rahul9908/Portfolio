@@ -1009,13 +1009,3 @@ body.cursor-hover .cursor-dot { transform: translate(-50%, -50%) scale(0); }
   transform: translateY(-2px);
 }
 
-
-/* ============================================================
-   DISABLED BUTTON (temporary: resume pending update)
-============================================================ */
-.btn-disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
-  pointer-events: none;
-  user-select: none;
-}
