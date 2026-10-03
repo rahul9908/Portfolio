@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rahul Tammalla – Data &amp; Business Analyst delivering production SQL analysis, ETL pipelines, and stakeholder-facing Tableau/Power BI reporting on Snowflake, Databricks, and AWS.">
+  <title>Rahul Tammalla</title>
+  <link rel="icon" type="image/png" href="../assets/logo/NN2.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X3T2V9K1VE"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-X3T2V9K1VE');</script>
+</head>
+<body>
+  <!-- Custom cursor (desktop only) -->
+  <div id="cursor-dot"  class="cursor-dot"></div>
+  <div id="cursor-ring" class="cursor-ring"></div>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <header class="nav" id="nav">
+    <nav class="nav-inner">
+      <a href="./" class="nav-logo">RT<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about"><span class="num">01.</span> About</a></li>
+        <li><a href="#experience"><span class="num">02.</span> Experience</a></li>
+        <li><a href="#work"><span class="num">03.</span> Work</a></li>
+        <li><a href="#contact"><span class="num">04.</span> Contact</a></li>
+      </ul>
+      <a href="../assets/download/Rahul_Resume.pdf" class="btn-outline" download>Resume</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <i class="fa-solid fa-bars" id="hamIcon"></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile drawer -->
+  <div class="drawer" id="drawer">
+    <button class="drawer-close" id="drawerClose"><i class="fa-solid fa-xmark"></i></button>
+    <nav class="drawer-nav">
+      <ol>
+        <li><a href="#about" class="drawer-link"><span>01.</span> About</a></li>
+        <li><a href="#experience" class="drawer-link"><span>02.</span> Experience</a></li>
+        <li><a href="#work" class="drawer-link"><span>03.</span> Work</a></li>
+        <li><a href="#contact" class="drawer-link"><span>04.</span> Contact</a></li>
+      </ol>
+      <a href="../assets/download/Rahul_Resume.pdf" class="btn-outline drawer-resume" download>Resume</a>
+    </nav>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+
+  <!-- ============================================================
+       SIDE RAILS (desktop only)
+  ============================================================ -->
+
+  <!-- Left rail: social icons + line -->
+  <div class="side-rail side-left">
+    <ul class="side-social">
+      <li><a href="https://github.com/rahul9908" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+      <li><a href="https://linkedin.com/in/tammalla-rahul" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+      <li><a href="mailto:tammalr@clarkson.edu" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></li>
+    </ul>
+  </div>
+
+  <!-- Right rail: rotated email + line -->
+  <div class="side-rail side-right">
+    <a href="mailto:tammalr@clarkson.edu" class="side-email">tammalr@clarkson.edu</a>
+  </div>
+
+
+  <!-- ============================================================
+       MAIN CONTENT
+  ============================================================ -->
+  <main>
+
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <p class="hero-label fade-up" style="--delay:100ms">Hi, my name is</p>
+        <h1 class="hero-name fade-up" style="--delay:200ms">Rahul Tammalla.</h1>
+        <h2 class="hero-tagline fade-up" style="--delay:300ms">I build
+          <span class="role-rotator" aria-label="data pipelines, dashboards teams trust, analysis that ships, reliable data, decisions from data">
+            <span class="role-track">
+              <span>data people trust.</span>
+              <span>pipelines that hold.</span>
+              <span>dashboards that ship.</span>
+              <span>analysis that decides.</span>
+              <span>requirements that land.</span>
+            </span>
+          </span>
+        </h2>
+        <p class="hero-desc fade-up" style="--delay:400ms">
+          <strong>Data &amp; Business Analyst</strong> with 4+ years in the IT industry turning messy, high-volume data and fuzzy business questions into reporting that finance and operations teams actually run on — including a multi-year GxP-regulated engagement supporting <strong>Gilead Life Sciences</strong>. SQL, Python, Tableau/Power BI on Snowflake, Databricks and AWS.
+        </p>
+        <div class="hero-cta fade-up" style="--delay:500ms">
+          <a href="#work" class="btn-outline btn-magnetic">Check out my work &#8594;</a>
+        </div>
+        <!-- Scrolling role marquee -->
+        <div class="marquee-wrap fade-up" style="--delay:650ms" aria-hidden="true">
+          <div class="marquee-track">
+            <span>Data Analyst</span><span class="msep">/</span>
+            <span>Business Analyst</span><span class="msep">/</span>
+            <span>SQL</span><span class="msep">/</span>
+            <span>Tableau</span><span class="msep">/</span>
+            <span>Power BI</span><span class="msep">/</span>
+            <span>Snowflake</span><span class="msep">/</span>
+            <span>Databricks</span><span class="msep">/</span>
+            <span>PySpark</span><span class="msep">/</span>
+            <span>Airflow</span><span class="msep">/</span>
+            <span>AWS</span><span class="msep">/</span>
+            <span>dbt</span><span class="msep">/</span>
+            <span>Data Analyst</span><span class="msep">/</span>
+            <span>Business Analyst</span><span class="msep">/</span>
+            <span>SQL</span><span class="msep">/</span>
+            <span>Tableau</span><span class="msep">/</span>
+            <span>Power BI</span><span class="msep">/</span>
+            <span>Snowflake</span><span class="msep">/</span>
+            <span>Databricks</span><span class="msep">/</span>
+            <span>PySpark</span><span class="msep">/</span>
+            <span>Airflow</span><span class="msep">/</span>
+            <span>AWS</span><span class="msep">/</span>
+            <span>dbt</span><span class="msep">/</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS STRIP -->
+    <div class="stats-strip">
+      <div class="stats-inner">
+        <div class="stat">
+          <p class="stat-val"><span class="stat-num" data-target="20">0</span><span class="stat-suf">M+</span></p>
+          <p class="stat-label">records analyzed</p>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat">
+          <p class="stat-val"><span class="stat-num" data-target="5">0</span><span class="stat-suf">M+</span></p>
+          <p class="stat-label">daily records kept audit-ready</p>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat">
+          <p class="stat-val"><span class="stat-num" data-target="70">0</span><span class="stat-suf">%</span></p>
+          <p class="stat-label">pipeline reliability lift</p>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat">
+          <p class="stat-val"><span class="stat-num" data-target="4">0</span><span class="stat-suf">+yrs</span></p>
+          <p class="stat-label">in the IT industry</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ============================================================
+         ABOUT
+    ============================================================ -->
+    <section id="about" class="section section-light">
+      <div class="container">
+        <h2 class="section-heading reveal"><span class="section-num">01.</span> About Me</h2>
+        <div class="about-inner">
+          <div class="about-text reveal">
+            <p>I'm a Data and Business Analyst with <strong>4+ years in the IT industry</strong>, most of it spent making enterprise data trustworthy enough to report on. At Cognizant I supported <strong>Gilead Life Sciences</strong> on a multi-year GxP-regulated analytics platform, keeping <strong>5M+ daily records</strong> audit-ready through automated validation, row-count reconciliation and anomaly alerting.</p>
+            <p>I work end to end: advanced SQL and dimensional modeling, Python/PySpark pipelines on Snowflake, Databricks and AWS, and the Tableau/Power BI layer that finance and operations teams actually open every morning. M.S. Applied Data Science, Clarkson University (GPA 3.8/4.0, Merit Scholar).</p>
+            <p>On the business side I turn ambiguous asks into requirements, consistent KPI definitions and UAT plans, then into a reporting product people trust. The part I care about most is the unglamorous part: catching an upstream break before it reaches a business consumer, and making sure two teams mean the same thing by the same metric.</p>
+            <ul class="about-tech-list">
+              <li>SQL (Advanced)</li>
+              <li>Python / PySpark</li>
+              <li>Tableau / Power BI</li>
+              <li>Snowflake / Databricks</li>
+              <li>Airflow / dbt</li>
+              <li>AWS (S3 / Glue / Redshift)</li>
+            </ul>
+            <div class="about-chips">
+              <span><i class="fa-solid fa-location-dot"></i> Richmond, VA &middot; Local Candidate</span>
+              <span><i class="fa-solid fa-id-badge"></i> F-1 OPT</span>
+            </div>
+          </div>
+          <div class="about-img reveal">
+            <div class="img-wrapper">
+              <img src="../assets/images/about/PROFILEphoto.png" alt="Rahul Tammalla">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         WHAT I DO
+    ============================================================ -->
+    <section class="section section-dark build-section">
+      <div class="container">
+        <h2 class="section-heading reveal" style="color: var(--text-inv);">What I Do</h2>
+        <div class="build-grid">
+
+          <div class="build-card reveal">
+            <div class="build-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+            <h3>SQL Analysis &amp; Reporting</h3>
+            <p>Advanced SQL against enterprise warehouses to answer the question actually being asked, then the dimensional model and field mapping that let the next person answer it without me. Hypothesis testing, ANOVA, Chi-Square and Mann-Whitney U when a difference needs to be real, not just visible.</p>
+          </div>
+
+          <div class="build-card reveal">
+            <div class="build-icon"><i class="fa-solid fa-chart-pie"></i></div>
+            <h3>Dashboards Stakeholders Trust</h3>
+            <p>Tableau and Power BI built for finance and operations teams, not for screenshots. Clear KPI definitions, drill-through that follows how people actually investigate, and numbers that reconcile against source so nobody opens a side spreadsheet to double-check.</p>
+          </div>
+
+          <div class="build-card reveal">
+            <div class="build-icon"><i class="fa-solid fa-clipboard-list"></i></div>
+            <h3>Requirements, KPIs &amp; UAT</h3>
+            <p>Stakeholder interviews turned into requirements packs, one governed definition per KPI, BPMN process maps of how work actually flows, and UAT plans with pass/fail criteria, so the report that ships is the report the business asked for.</p>
+          </div>
+
+          <div class="build-card reveal">
+            <div class="build-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>Data Quality &amp; Root-Cause</h3>
+            <p>Schema enforcement, row-count reconciliation and anomaly alerting that catch upstream breaks before a business consumer sees them, plus the root-cause work on the failure that keeps recurring, so it stops recurring.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         EXPERIENCE
+    ============================================================ -->
+    <section id="experience" class="section section-dark">
+      <div class="container">
+        <h2 class="section-heading reveal"><span class="section-num">02.</span> Where I've Worked</h2>
+        <div class="exp-container reveal">
+          <div class="exp-tabs" role="tablist">
+            <button class="exp-tab active" data-tab="balanx" role="tab">BalanX Bio</button>
+            <button class="exp-tab" data-tab="clarkson" role="tab">Clarkson / EMS</button>
+            <button class="exp-tab" data-tab="i4di" role="tab">I4DI</button>
+            <button class="exp-tab" data-tab="cognizant" role="tab">Cognizant / Gilead</button>
+            <div class="tab-indicator"></div>
+          </div>
+          <div class="exp-panels">
+
+            <div class="exp-panel active" data-panel="balanx">
+              <h3 class="exp-title">Data Analyst <span class="exp-company">@ <a href="#" class="accent-link">BalanX Bio</a></span></h3>
+              <p class="exp-date">July 2026 &ndash; Present &middot; Remote &middot; Multi-Modal AI Product</p>
+              <ul class="exp-bullets">
+                <li>Built <strong>Python/SQL ETL pipelines</strong> with schema validation and quality checks across <strong>3 signal types</strong>, turning raw multi-modal input into the clean, analysis-ready dataset behind every downstream decision.</li>
+                <li>Stood up a <strong>Databricks</strong> analytics layer with PySpark jobs aggregating conversation logs, emotion scores and retrieval results by user and session, then benchmarked competing retrieval strategies to identify which surfaced more relevant results.</li>
+                <li>Designed a sliding-window pattern-detection rule that clusters recurring signals rather than single events, cutting <strong>false-positive writes 40%</strong> and lifting downstream relevance <strong>20%</strong>.</li>
+                <li>Shipped to an <strong>AWS</strong>-hosted production environment through <strong>CI/CD</strong> pipelines, running async processing on a background worker pool with automatic failover across 4 models.</li>
+              </ul>
+            </div>
+
+            <div class="exp-panel" data-panel="clarkson">
+              <h3 class="exp-title">Data Analyst Assistant <span class="exp-company">@ <a href="#" class="accent-link">Clarkson University</a></span></h3>
+              <p class="exp-date">January 2025 &ndash; June 2026 &middot; Client: St. Lawrence County EMS</p>
+              <ul class="exp-bullets">
+                <li>Analyzed <strong>20M+ NEMSIS emergency records</strong> with hypothesis testing, Chi-Square, ANOVA and Mann-Whitney U, engineering <strong>70+ features</strong> to surface <strong>15 statistically significant predictors</strong> of stroke-related 911 delays, projected to cut response times <strong>40%</strong>.</li>
+                <li>Built Python/SQL/PySpark pipelines resolving <strong>1M+ missing values</strong> via multivariate imputation to lift completeness to <strong>95%</strong>, feeding scikit-learn models that raised prediction accuracy <strong>20%</strong>.</li>
+                <li>Validated models via k-fold CV, <strong>ROC-AUC</strong> and confusion-matrix analysis, surfacing the 15 key predictors through <strong>PostgreSQL/Tableau</strong> dashboards as a stakeholder-facing dispatch risk-prioritization view.</li>
+                <li>Delivered feature development and QA testing for <strong>ERDPlus</strong>, building ER-diagram, relational-schema and auto-generated SQL script functionality used for downstream data delivery.</li>
+              </ul>
+            </div>
+
+            <div class="exp-panel" data-panel="i4di">
+              <h3 class="exp-title">Data Analyst <span class="exp-company">@ <a href="#" class="accent-link">I4DI</a></span></h3>
+              <p class="exp-date">May 2025 &ndash; August 2025 &middot; Washington, DC &middot; Research &amp; Program Analytics</p>
+              <ul class="exp-bullets">
+                <li>Cut <strong>data preparation time 43%</strong> by building Pandas/NumPy preprocessing pipelines that delivered clean, analysis-ready datasets with consistent quality across all KPI dashboards and stakeholder reports.</li>
+                <li>Automated survey-question generation from program-participant engagement data using structured prompting and <strong>JSON-schema validation</strong>, cutting manual survey-authoring effort <strong>90%</strong> for the analyst team.</li>
+                <li>Optimized embedding pipelines in PyTorch with batched inference across <strong>1K+ document chunks</strong>, cutting processing latency <strong>42%</strong> (5.1s &rarr; 2.9s) and lifting retrieval <strong>Precision@K 30%</strong>.</li>
+                <li>Built a document retrieval layer with <strong>FAISS</strong> semantic search and a real-time knowledge-base override, returning sub-second answers at <strong>95%+ accuracy</strong> for program managers and field teams.</li>
+              </ul>
+            </div>
+
+            <div class="exp-panel" data-panel="cognizant">
+              <h3 class="exp-title">Data Analyst <span class="exp-company">@ <a href="#" class="accent-link">Cognizant</a></span></h3>
+              <p class="exp-date">October 2021 &ndash; August 2024 &middot; Remote &middot; Client: Gilead Life Sciences</p>
+              <ul class="exp-bullets">
+                <li>Delivered <strong>5+ Tableau and Power BI dashboards</strong> integrating <strong>3+ source systems</strong> for finance and operations on a <strong>GxP-regulated</strong> enterprise analytics platform, surfacing real-time KPIs and cutting manual reporting effort <strong>30%</strong>.</li>
+                <li>Lifted <strong>pipeline reliability 70%</strong> and <strong>query performance 30%</strong> building Airflow/SQL ETL pipelines on Snowflake, Redshift, Databricks and AWS (S3, Glue, EMR, Lambda), keeping <strong>5M+ daily records</strong> analysis-ready.</li>
+                <li>Enforced data quality SLAs through automated validation checks, <strong>row-count reconciliation</strong> and anomaly alerting, catching upstream breaks before they reached business reporting consumers.</li>
+                <li>Designed dimensional data models and schema migration plans in <strong>dbt</strong> that standardized cross-team data delivery and kept downstream reporting stable through source-system changes.</li>
+                <li>Ran <strong>root-cause analysis</strong> on recurring pipeline failures across <strong>1M+ daily transactions</strong>, resolving defects that had been delaying 3 downstream reporting teams.</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         WORK / PROJECTS
+    ============================================================ -->
+    <section id="work" class="section section-light">
+      <div class="container">
+        <h2 class="section-heading reveal"><span class="section-num">03.</span> Some Things I've Built</h2>
+
+        <!-- Featured projects -->
+        <div class="featured-list">
+
+          <!-- Featured 1: NYC Public Safety -->
+          <div class="fp reveal">
+            <div class="fp-content">
+              <p class="fp-overline">Featured Project</p>
+              <h3 class="fp-title"><a href="https://github.com/rahul9908" target="_blank" rel="noopener">NYC Public Safety Behavioral System</a></h3>
+              <div class="fp-desc">
+                <p>Ingested and cleaned <strong>25GB+</strong> of NYC 311 and NYPD incident records with PySpark on Databricks, applying schema validation and quality checks to produce an analysis-ready dataset. Engineered time-of-day, borough and seasonality features to surface <strong>12+ repeatable spatial concentration patterns</strong> for non-technical city-planning stakeholders.</p>
+                <p>The forecaster reached <strong>82%+ accuracy</strong>, benchmarked against a seasonal baseline to confirm real predictive lift, then shipped behind a FastAPI endpoint and Folium choropleth so it became a self-service tool rather than a one-off report.</p>
+              </div>
+              <ul class="fp-tech">
+                <li>PySpark</li><li>Databricks</li><li>SQL</li><li>scikit-learn</li><li>FastAPI</li><li>Folium</li>
+              </ul>
+              <div class="fp-links">
+                <a href="https://github.com/rahul9908" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <div class="fp-image">
+              <a href="https://github.com/rahul9908" target="_blank" rel="noopener">
+                <div class="fp-img-placeholder" style="background: linear-gradient(135deg, #0c2340 0%, #0c4a6e 50%, #0a192f 100%);">
+                  <div class="fp-img-label">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <span>25GB+ &middot; Geospatial Analysis</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Featured 2: Customer Revenue & Retention (image left) -->
+          <div class="fp fp-reverse reveal">
+            <div class="fp-content">
+              <p class="fp-overline">Featured Project</p>
+              <h3 class="fp-title"><a href="https://github.com/rahul9908/customer-revenue-retention-analytics" target="_blank" rel="noopener">Revenue &amp; Retention Analytics</a></h3>
+              <div class="fp-desc">
+                <p>End-to-end analytics platform over <strong>125K orders</strong> and 224K line items spanning 36 months, covering revenue performance, retention, conversion funnel and sales-target variance for both executive dashboards and the engineers operating the pipelines.</p>
+                <p><strong>$26.76M</strong> in recognized revenue, fully reconciled against independent Excel controls, a 13.6% visit-to-purchase funnel with the largest drop isolated between product view and add-to-cart, and a seasonal-trend model explaining <strong>92.8%</strong> of historical variation.</p>
+              </div>
+              <ul class="fp-tech">
+                <li>SQL</li><li>dbt</li><li>Power BI</li><li>Streamlit</li><li>pytest</li>
+              </ul>
+              <div class="fp-links">
+                <a href="https://github.com/rahul9908/customer-revenue-retention-analytics" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <div class="fp-image">
+              <a href="https://github.com/rahul9908/customer-revenue-retention-analytics" target="_blank" rel="noopener">
+                <div class="fp-img-placeholder" style="background: linear-gradient(135deg, #14532d 0%, #166534 50%, #052e16 100%);">
+                  <div class="fp-img-label">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>$26.76M &middot; Fully Reconciled</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Featured 3: Reporting Governance -->
+          <div class="fp reveal">
+            <div class="fp-content">
+              <p class="fp-overline">Featured Project</p>
+              <h3 class="fp-title"><a href="https://github.com/rahul9908/enterprise-reporting-governance-modernization" target="_blank" rel="noopener">Reporting Governance Modernization</a></h3>
+              <div class="fp-desc">
+                <p>Business analysis and BI delivery that replaced fragmented departmental spreadsheets with a governed, certified Power BI product: requirements pack, consistent KPI definitions, reconciliation logic in SQL, row-level security and a UAT framework.</p>
+                <p>Reporting cycle cut from <strong>5 business days to 2</strong>, manual touchpoints from <strong>14 to 4</strong>, unreconciled variance from <strong>2.8% to under 0.5%</strong>, releasing roughly <strong>$69K</strong> in annual capacity.</p>
+              </div>
+              <ul class="fp-tech"><li>Power BI</li><li>DAX</li><li>SQL</li><li>Row-Level Security</li><li>UAT</li></ul>
+              <div class="fp-links">
+                <a href="https://github.com/rahul9908/enterprise-reporting-governance-modernization" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <div class="fp-image">
+              <a href="https://github.com/rahul9908/enterprise-reporting-governance-modernization" target="_blank" rel="noopener">
+                <div class="fp-img-placeholder" style="background: linear-gradient(135deg, #3b0764 0%, #581c87 50%, #1e1b4b 100%);">
+                  <div class="fp-img-label">
+                    <i class="fa-solid fa-clipboard-check"></i>
+                    <span>5 days &rarr; 2 &middot; Governed KPIs</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Analysis & statistics -->
+        <h3 class="other-heading reveal">Analysis &amp; Statistical Modeling</h3>
+        <div class="other-grid">
+
+          <div class="other-card reveal">
+            <div class="card-top">
+              <i class="fa-solid fa-folder-open card-folder"></i>
+              <div class="card-links">
+                <a href="https://github.com/rahul9908" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <h4 class="card-title">Parkinson&rsquo;s Disease Screening</h4>
+            <p class="card-desc">Diagnosed severe class imbalance first, then applied SMOTE and PCA to build a defensible modeling set rather than optimizing against a skewed baseline. SVM / Random Forest / MLP validated with k-fold CV and ROC-AUC at 95%+ accuracy.</p>
+            <ul class="card-tech"><li>Python</li><li>PCA</li><li>SMOTE</li><li>scikit-learn</li></ul>
+          </div>
+
+          <div class="other-card reveal">
+            <div class="card-top">
+              <i class="fa-solid fa-folder-open card-folder"></i>
+              <div class="card-links">
+                <a href="https://github.com/rahul9908/clinical-consent-NER-Project" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <h4 class="card-title">Clinical Consent NER &amp; Risk Classifier</h4>
+            <p class="card-desc">spaCy NER over annotated consent documents extracting 5 entity types at 85% F1, with a risk classifier flagging high-risk segments at 80%+ precision, structured quality signals pulled out of unstructured text.</p>
+            <ul class="card-tech"><li>spaCy</li><li>Transformers</li><li>scikit-learn</li></ul>
+          </div>
+
+          <div class="other-card reveal">
+            <div class="card-top">
+              <i class="fa-solid fa-folder-open card-folder"></i>
+              <div class="card-links">
+                <a href="https://github.com/rahul9908/US-Accident-Insights" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <h4 class="card-title">US Accident Insights &mdash; R Shiny</h4>
+            <p class="card-desc">Cleaned and normalized 40,000+ accident records with dplyr and lubridate, resolving inconsistent timestamps and location fields before building any reporting layer. Deployed R Shiny app with dynamic filtering for non-technical users.</p>
+            <ul class="card-tech"><li>R</li><li>R Shiny</li><li>ggplot2</li><li>dplyr</li></ul>
+          </div>
+
+        </div>
+
+        <!-- BI & business analysis -->
+        <h3 class="other-heading reveal">BI &amp; Business Analysis</h3>
+        <div class="other-grid">
+
+          <div class="other-card reveal">
+            <div class="card-top">
+              <i class="fa-solid fa-folder-open card-folder"></i>
+              <div class="card-links">
+                <a href="https://github.com/rahul9908/saas-fpa-financial-model" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <h4 class="card-title">SaaS FP&amp;A Control Tower</h4>
+            <p class="card-desc">48-month driver-based model tracking MRR, NRR/GRR at 98.4% and 5.7x LTV/CAC, with Monte Carlo analysis putting a 59.7% probability on cash falling below $1M by year-end, the finding that reframed the whole recommendation.</p>
+            <ul class="card-tech"><li>Python</li><li>Excel</li><li>Power BI</li><li>SQLite</li></ul>
+          </div>
+
+          <div class="other-card reveal">
+            <div class="card-top">
+              <i class="fa-solid fa-folder-open card-folder"></i>
+              <div class="card-links">
+                <a href="https://github.com/rahul9908/home-depot-financial-performance-analytics" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <h4 class="card-title">Home Depot Financial Analysis</h4>
+            <p class="card-desc">SEC XBRL pipeline into an Excel and Power BI model across FY21&ndash;FY25. Surfaced margin compression 15.2% &rarr; 12.7% and ROIC falling 49.7% &rarr; 26.3%, landing on a hold/monitor call tied to operating thresholds rather than valuation alone.</p>
+            <ul class="card-tech"><li>Python</li><li>Power BI</li><li>Excel</li><li>SEC API</li></ul>
+          </div>
+
+          <div class="other-card reveal">
+            <div class="card-top">
+              <i class="fa-solid fa-folder-open card-folder"></i>
+              <div class="card-links">
+                <a href="https://github.com/rahul9908/ai-support-operating-model" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <h4 class="card-title">AI Support Operating Model</h4>
+            <p class="card-desc">Human-governed AI support design using Claude for classification and drafting, 91.5% accuracy and ~24% faster handling. Recommended a controlled pilot behind four consecutive weeks of release gates rather than a broad rollout.</p>
+            <ul class="card-tech"><li>Claude</li><li>Prompt Engineering</li><li>Power BI</li><li>BPMN</li></ul>
+          </div>
+
+        </div>
+
+        <!-- Research -->
+        <div class="research-note reveal">
+          <p class="research-label"><i class="fa-solid fa-flask"></i> Research</p>
+          <h4 class="research-title">Modeling Human Preference Signals in LLM Pairwise Evaluations</h4>
+          <p class="research-meta">Clarkson University &middot; 2026</p>
+          <p class="research-desc">Analyzed <strong>98K crowdsourced evaluation records</strong> with statistical feature selection, identifying response verbosity as the dominant predictor of human preference and surfacing systematic bias in benchmark scoring.</p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SKILLS
+    ============================================================ -->
+    <section id="skills" class="section section-dark">
+      <div class="container">
+        <h2 class="section-heading reveal"><span class="section-num">04.</span> Skills &amp; Technologies</h2>
+        <div class="skills-block reveal">
+
+          <div class="skill-category">
+            <p class="skill-cat-label">Languages &amp; Query</p>
+            <div class="skill-tags">
+              <span>SQL (Advanced)</span><span>Python</span><span>R</span><span>PySpark</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <p class="skill-cat-label">Analytics &amp; Visualization</p>
+            <div class="skill-tags">
+              <span>Tableau</span><span>Power BI</span><span>DAX</span><span>Dashboard Design</span>
+              <span>KPI Reporting</span><span>Matplotlib</span><span>Seaborn</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <p class="skill-cat-label">Cloud &amp; Data Platforms</p>
+            <div class="skill-tags">
+              <span>Snowflake</span><span>Databricks</span><span>AWS (S3 &middot; Glue &middot; Redshift &middot; EMR &middot; Lambda)</span>
+              <span>PostgreSQL</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <p class="skill-cat-label">Data Engineering</p>
+            <div class="skill-tags">
+              <span>Airflow</span><span>dbt</span><span>ETL Pipelines</span>
+              <span>Dimensional Modeling</span><span>Schema Migration</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <p class="skill-cat-label">Data Quality &amp; Statistics</p>
+            <div class="skill-tags">
+              <span>Data Validation</span><span>Schema Enforcement</span><span>Row-Count Reconciliation</span>
+              <span>Anomaly Alerting</span><span>Hypothesis Testing</span><span>ANOVA</span>
+              <span>Chi-Square</span><span>Mann-Whitney U</span><span>ROC-AUC</span><span>Multivariate Imputation</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <p class="skill-cat-label">Business Analysis</p>
+            <div class="skill-tags">
+              <span>Requirements Gathering</span><span>KPI Definition</span><span>UAT</span>
+              <span>Process Modeling (BPMN)</span><span>Stakeholder Reporting</span><span>Data Governance</span><span>Excel Modeling</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <p class="skill-cat-label">AI-Assisted Development</p>
+            <div class="skill-tags">
+              <span>Claude</span><span>Prompt Engineering</span><span>spaCy</span><span>NLP</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Certifications -->
+        <div class="certs-row reveal">
+          <p class="certs-label">Certifications</p>
+          <div class="certs-list">
+            <span class="cert-chip"><i class="fa-solid fa-certificate"></i> Claude 101 &mdash; Anthropic &middot; Jun 2026</span>
+            <span class="cert-chip"><i class="fa-solid fa-certificate"></i> AI Fluency Framework &amp; Foundations &mdash; Anthropic &middot; Jun 2026</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         CONTACT
+    ============================================================ -->
+    <section id="contact" class="section section-dark contact-section">
+      <div class="container">
+        <div class="contact-inner reveal">
+          <p class="contact-overline">05. What's Next?</p>
+          <h2 class="contact-heading">Get In Touch.</h2>
+          <p class="contact-desc">I'm open to Data Analyst and Business Analyst roles. If you have a question, an opportunity, or a messy dataset that needs someone to make sense of it, my inbox is always open.</p>
+          <a href="mailto:tammalr@clarkson.edu" class="btn-outline btn-large">Say Hello &#8594;</a>
+          <div class="contact-links">
+            <a href="https://github.com/rahul9908" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/tammalla-rahul" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:tammalr@clarkson.edu"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 Rahul Tammalla. All rights reserved.</p>
+      <p>Designed &amp; Built by <a href="https://github.com/rahul9908" target="_blank" rel="noopener" class="accent-link">Rahul Tammalla</a></p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
