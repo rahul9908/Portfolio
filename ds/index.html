@@ -32,8 +32,7 @@
         <li><a href="#work"><span class="num">03.</span> Work</a></li>
         <li><a href="#contact"><span class="num">04.</span> Contact</a></li>
       </ul>
-      <!-- enable when PDF exists: <a href="../assets/download/Rahul_Resume_DS.pdf" class="btn-outline" download>Resume</a> -->
-      <span class="btn-outline btn-disabled" aria-disabled="true">Resume</span>
+      <a href="../assets/download/Rahul_Resume_DS.pdf" class="btn-outline" download>Resume</a>
       <button class="hamburger" id="hamburger" aria-label="Menu">
         <i class="fa-solid fa-bars" id="hamIcon"></i>
       </button>
@@ -50,8 +49,7 @@
         <li><a href="#work" class="drawer-link"><span>03.</span> Work</a></li>
         <li><a href="#contact" class="drawer-link"><span>04.</span> Contact</a></li>
       </ol>
-      <!-- enable when PDF exists: <a href="../assets/download/Rahul_Resume_DS.pdf" class="btn-outline drawer-resume" download>Resume</a> -->
-      <span class="btn-outline drawer-resume btn-disabled" aria-disabled="true">Resume</span>
+      <a href="../assets/download/Rahul_Resume_DS.pdf" class="btn-outline drawer-resume" download>Resume</a>
     </nav>
   </div>
   <div class="drawer-overlay" id="drawerOverlay"></div>
@@ -152,8 +150,8 @@
         </div>
         <div class="stat-div"></div>
         <div class="stat">
-          <p class="stat-val"><span class="stat-num" data-target="95">0</span><span class="stat-suf">%</span></p>
-          <p class="stat-label">data completeness restored</p>
+          <p class="stat-val"><span class="stat-num" data-target="40">0</span><span class="stat-suf">%</span></p>
+          <p class="stat-label">false positives cut</p>
         </div>
       </div>
     </div>
@@ -239,7 +237,7 @@
         <div class="exp-container reveal">
           <div class="exp-tabs" role="tablist">
             <button class="exp-tab active" data-tab="balanx" role="tab">BalanX Bio</button>
-            <button class="exp-tab" data-tab="clarkson" role="tab">Clarkson / EMS</button>
+            <button class="exp-tab" data-tab="clarkson" role="tab">Clarkson</button>
             <button class="exp-tab" data-tab="i4di" role="tab">I4DI</button>
             <button class="exp-tab" data-tab="cognizant" role="tab">Cognizant / Gilead</button>
             <div class="tab-indicator"></div>
@@ -247,35 +245,30 @@
           <div class="exp-panels">
 
             <div class="exp-panel active" data-panel="balanx">
-              <h3 class="exp-title">Data Analyst <span class="exp-company">@ <a href="#" class="accent-link">BalanX Bio</a></span></h3>
-              <p class="exp-date">July 2026 &ndash; Present &middot; Remote &middot; Multi-Modal AI Product</p>
+              <h3 class="exp-title">Data Science Intern <span class="exp-company">@ <a href="#" class="accent-link">BalanX Bio</a></span></h3>
+              <p class="exp-date">July 2026 &ndash; Present &middot; East Lansing, MI</p>
               <ul class="exp-bullets">
-                <li>Built <strong>Python/SQL ETL pipelines</strong> with schema validation and quality checks across <strong>3 signal types</strong>, turning raw multi-modal input into the clean, analysis-ready dataset behind every downstream decision.</li>
-                <li>Stood up a <strong>Databricks</strong> analytics layer with PySpark jobs aggregating conversation logs, emotion scores and retrieval results by user and session, then benchmarked competing retrieval strategies to identify which surfaced more relevant results.</li>
-                <li>Designed a sliding-window pattern-detection rule that clusters recurring signals rather than single events, cutting <strong>false-positive writes 40%</strong> and lifting downstream relevance <strong>20%</strong>.</li>
-                <li>Shipped to an <strong>AWS</strong>-hosted production environment through <strong>CI/CD</strong> pipelines, running async processing on a background worker pool with automatic failover across 4 models.</li>
+                <li>Designed a sliding-window <strong>pattern-detection model</strong> for multi-modal emotional signals, clustering observations by valence-arousal-dominance distance and <strong>cosine similarity</strong> to cut one-off false-positive writes <strong>40%</strong>.</li>
+                <li>Built and evaluated a composite <strong>retrieval-ranking</strong> method combining semantic similarity, emotional alignment and time decay, comparing <strong>5 approaches</strong> across <strong>4 design iterations</strong> to lift relevance <strong>20%</strong>.</li>
               </ul>
             </div>
 
             <div class="exp-panel" data-panel="clarkson">
-              <h3 class="exp-title">AI/ML Research Assistant <span class="exp-company">@ <a href="#" class="accent-link">Clarkson University</a></span></h3>
-              <p class="exp-date">January 2025 &ndash; June 2026 &middot; Client: St. Lawrence County EMS</p>
+              <h3 class="exp-title">Statistical Research Assistant <span class="exp-company">@ <a href="#" class="accent-link">Clarkson University</a></span></h3>
+              <p class="exp-date">January 2025 &ndash; June 2026 &middot; Potsdam, NY</p>
               <ul class="exp-bullets">
-                <li>Analyzed <strong>20M+ NEMSIS emergency records</strong> with hypothesis testing, Chi-Square, ANOVA and Mann-Whitney U, engineering <strong>70+ features</strong> to surface <strong>15 statistically significant predictors</strong> of stroke-related 911 delays, projected to cut response times <strong>40%</strong>.</li>
-                <li>Built Python/SQL/PySpark pipelines resolving <strong>1M+ missing values</strong> via multivariate imputation to lift completeness to <strong>95%</strong>, feeding scikit-learn models that raised prediction accuracy <strong>20%</strong>.</li>
-                <li>Validated models via k-fold CV, <strong>ROC-AUC</strong> and confusion-matrix analysis, surfacing the 15 key predictors through <strong>PostgreSQL/Tableau</strong> dashboards as a stakeholder-facing dispatch risk-prioritization view.</li>
-                <li>Delivered feature development and QA testing for <strong>ERDPlus</strong>, building ER-diagram, relational-schema and auto-generated SQL script functionality used for downstream data delivery.</li>
+                <li>Conducted <strong>EDA</strong> and statistical analysis across <strong>20M+ NEMSIS emergency records</strong> using Python, SQL and hypothesis testing, engineering <strong>70+ features</strong> and identifying <strong>15 significant predictors</strong> of stroke-related dispatch delays.</li>
+                <li>Built Python/PySpark pipelines resolving <strong>1M+ missing values</strong> through multivariate imputation, then trained and tuned <strong>Random Forest, XGBoost, LightGBM and SVM</strong> models using k-fold validation and <strong>ROC-AUC</strong> evaluation.</li>
+                <li>Published model results through <strong>PostgreSQL</strong> and <strong>Tableau</strong> dashboards, enabling research stakeholders to investigate delay factors, model performance and high-risk conditions.</li>
               </ul>
             </div>
 
             <div class="exp-panel" data-panel="i4di">
-              <h3 class="exp-title">Data Analyst <span class="exp-company">@ <a href="#" class="accent-link">I4DI</a></span></h3>
-              <p class="exp-date">May 2025 &ndash; August 2025 &middot; Washington, DC &middot; Research &amp; Program Analytics</p>
+              <h3 class="exp-title">Data Science Intern <span class="exp-company">@ <a href="#" class="accent-link">I4DI</a></span></h3>
+              <p class="exp-date">May 2025 &ndash; August 2025 &middot; Washington, DC</p>
               <ul class="exp-bullets">
-                <li>Cut <strong>data preparation time 43%</strong> by building Pandas/NumPy preprocessing pipelines that delivered clean, analysis-ready datasets with consistent quality across all KPI dashboards and stakeholder reports.</li>
-                <li>Automated survey-question generation from program-participant engagement data using structured prompting and <strong>JSON-schema validation</strong>, cutting manual survey-authoring effort <strong>90%</strong> for the analyst team.</li>
-                <li>Optimized embedding pipelines in PyTorch with batched inference across <strong>1K+ document chunks</strong>, cutting processing latency <strong>42%</strong> (5.1s &rarr; 2.9s) and lifting retrieval <strong>Precision@K 30%</strong>.</li>
-                <li>Built a document retrieval layer with <strong>FAISS</strong> semantic search and a real-time knowledge-base override, returning sub-second answers at <strong>95%+ accuracy</strong> for program managers and field teams.</li>
+                <li>Optimized <strong>GTE embedding</strong> inference in <strong>PyTorch</strong> using dynamic batching and asynchronous data loading, cutting query latency from <strong>5.1s to 2.9s</strong> while improving <strong>Precision@K 30%</strong>.</li>
+                <li>Implemented <strong>FAISS HNSW and IVF</strong> indexes with cosine similarity and metadata filtering, evaluating retrieval experiments on Recall@K, MRR and nDCG with <strong>MLflow</strong> tracking.</li>
               </ul>
             </div>
 
@@ -283,11 +276,8 @@
               <h3 class="exp-title">Data Engineer <span class="exp-company">@ <a href="#" class="accent-link">Cognizant</a></span></h3>
               <p class="exp-date">October 2021 &ndash; August 2024 &middot; Remote &middot; Client: Gilead Life Sciences</p>
               <ul class="exp-bullets">
-                <li>Delivered <strong>5+ Tableau and Power BI dashboards</strong> integrating <strong>3+ source systems</strong> for finance and operations on a <strong>GxP-regulated</strong> enterprise analytics platform, surfacing real-time KPIs and cutting manual reporting effort <strong>30%</strong>.</li>
-                <li>Lifted <strong>pipeline reliability 70%</strong> and <strong>query performance 30%</strong> building Airflow/SQL ETL pipelines on Snowflake, Redshift, Databricks and AWS (S3, Glue, EMR, Lambda), keeping <strong>5M+ daily records</strong> analysis-ready.</li>
-                <li>Enforced data quality SLAs through automated validation checks, <strong>row-count reconciliation</strong> and anomaly alerting, catching upstream breaks before they reached business reporting consumers.</li>
-                <li>Designed dimensional data models and schema migration plans in <strong>dbt</strong> that standardized cross-team data delivery and kept downstream reporting stable through source-system changes.</li>
-                <li>Ran <strong>root-cause analysis</strong> on recurring pipeline failures across <strong>1M+ daily transactions</strong>, resolving defects that had been delaying 3 downstream reporting teams.</li>
+                <li>Cleaned and transformed enterprise data on <strong>AWS</strong> using <strong>Databricks</strong> and <strong>PySpark</strong> (schema validation, deduplication, joins), loading <strong>5M+ daily records</strong> into <strong>Snowflake</strong> for SQL-based business-rule validation and aggregation feeding downstream models.</li>
+                <li>Monitored <strong>Airflow</strong> pipelines and traced failures through Snowflake and Databricks to source data, adding validation checks and anomaly alerts that cut failures <strong>70%</strong> and lifted query performance <strong>30%</strong>, surfaced through Tableau/Power BI monitoring dashboards.</li>
               </ul>
             </div>
 
@@ -362,7 +352,7 @@
               <h3 class="fp-title"><a href="https://github.com/rahul9908/hybrid-support-search" target="_blank" rel="noopener">Hybrid Retrieval &amp; Ranking</a></h3>
               <div class="fp-desc">
                 <p>Retrieval service fusing BM25 with dense Sentence-Transformer embeddings and cross-encoder reranking, with MLflow experiment tracking and quality gates that block degraded index releases.</p>
-                <p>Evaluated on Recall@3, MRR and nDCG@3. BM25 won at <strong>0.725 nDCG@3</strong> on this corpus, and the write-up says so rather than overselling the hybrid.</p>
+                <p>Evaluated with Precision@K, MRR and nDCG, reaching <strong>0.700 MRR</strong>. The lexical BM25 baseline (0.725 nDCG@3) stayed champion, and the write-up says so rather than overselling the hybrid.</p>
               </div>
               <ul class="fp-tech"><li>FAISS</li><li>Sentence Transformers</li><li>MLflow</li><li>FastAPI</li><li>PostgreSQL</li><li>Kubernetes</li></ul>
               <div class="fp-links">
@@ -406,7 +396,7 @@
               </div>
             </div>
             <h4 class="card-title">Revenue &amp; Retention Analytics</h4>
-            <p class="card-desc">dbt + SQL platform over 125K orders and 36 months, with a seasonal-trend forecast explaining 92.8% of historical variation and chi-square validation on return patterns.</p>
+            <p class="card-desc">Cohort retention, RFM segmentation and CLV across 125K orders and 406K funnel events, with hypothesis testing and a regression forecast on a time-based holdout reaching R&sup2; 0.928.</p>
             <ul class="card-tech"><li>dbt</li><li>SQL</li><li>SciPy</li><li>pytest</li></ul>
           </div>
 
