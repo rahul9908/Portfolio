@@ -248,6 +248,77 @@
 
 
     <!-- ============================================================
+         RECALL — AI Memory Layer (live phone preview)
+    ============================================================ -->
+    <section class="section section-dark recall-section">
+      <div class="container">
+
+        <div class="world-eyebrow reveal">
+          <span class="world-badge"><i class="fa-solid fa-mobile-screen"></i> Live App &middot; Try It Here</span>
+        </div>
+
+        <div class="recall-inner">
+
+          <!-- copy — left -->
+          <div class="world-text reveal">
+            <p class="world-overline">Recall &middot; AI Memory Layer</p>
+            <h2 class="world-title">A Second Memory That Only Answers From What You Told It</h2>
+            <p class="world-desc">A mobile-first PWA that works as a personal memory layer. Capture by text, voice, photo or link; Recall extracts people, places, topics, intent and sentiment, links each memory to the right person, and answers natural-language questions <strong>using only what has been stored</strong>, showing its sources and saying so plainly when it has nothing.</p>
+            <p class="world-desc">Built around a <strong>provider-agnostic AI layer</strong> that is <strong>ready to integrate with LLMs (Claude, Gemini or Codex)</strong>: a hosted model can be swapped in behind a serverless endpoint without touching the UI. Until then, a fully on-device fallback engine in TypeScript does the work: rule-based entity extraction, sparse vector embeddings with concept expansion, and cosine-similarity retrieval. The demo runs with no API key, no backend and no sign-up.</p>
+            <p class="world-desc">Storage sits behind its own layer as well. It persists to local storage today and <strong>can be connected to any type of database</strong>: SQL (PostgreSQL, MySQL), NoSQL (MongoDB, Firebase, DynamoDB) or a vector store (Pinecone, pgvector, Chroma).</p>
+
+            <div class="rag-flow">
+              <div class="rag-step">
+                <span class="rag-num">01</span>
+                <p>Capture a memory by text, voice, photo or link</p>
+              </div>
+              <div class="rag-arrow"><i class="fa-solid fa-arrow-right-long"></i></div>
+              <div class="rag-step">
+                <span class="rag-num">02</span>
+                <p>On-device extraction links people, places and topics</p>
+              </div>
+              <div class="rag-arrow"><i class="fa-solid fa-arrow-right-long"></i></div>
+              <div class="rag-step">
+                <span class="rag-num">03</span>
+                <p>Grounded answer cites the memories it came from</p>
+              </div>
+            </div>
+
+            <ul class="world-tech-tags">
+              <li>React 19</li><li>TypeScript</li><li>Vite</li><li>Tailwind CSS 4</li><li>Framer Motion</li><li>PWA</li><li>LLM-Ready</li><li>Vitest</li>
+            </ul>
+
+            <div class="recall-cta">
+              <a href="https://recall-memory-three.vercel.app" target="_blank" rel="noopener" class="btn-primary world-cta">
+                Open Recall <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+              <a href="https://github.com/rahul9908/Recall-IOS-APP" target="_blank" rel="noopener" class="btn-outline recall-src">
+                <i class="fa-brands fa-github"></i> Source
+              </a>
+            </div>
+          </div>
+
+          <!-- phone preview — right -->
+          <div class="recall-preview reveal">
+            <div class="phone-frame">
+              <iframe
+                src="https://recall-memory-three.vercel.app"
+                class="world-iframe"
+                title="Recall, AI memory app live demo"
+                loading="lazy">
+              </iframe>
+            </div>
+            <a href="https://recall-memory-three.vercel.app" target="_blank" rel="noopener" class="phone-caption">
+              <i class="fa-solid fa-expand"></i> Open full screen
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
          WHAT I BUILD
     ============================================================ -->
     <section class="section section-dark build-section">

@@ -230,7 +230,7 @@ body.cursor-hover .cursor-dot { transform: translate(-50%, -50%) scale(0); }
 
 @media (max-width: 768px) {
   .nav { padding: 0 20px; }
-  .nav-links, .btn-outline:not(.drawer-resume) { display: none; }
+  .nav-links, .nav .btn-outline { display: none; }
   .hamburger { display: flex; }
   .drawer { display: flex; }
 }
@@ -1176,3 +1176,41 @@ body.cursor-hover .cursor-dot { transform: translate(-50%, -50%) scale(0); }
 
 /* Resume button placeholder when a version's PDF isn't uploaded yet */
 .btn-disabled { opacity: 0.4; cursor: not-allowed; pointer-events: none; user-select: none; }
+
+
+/* ============================================================
+   RECALL — live phone preview (AI site, below the 3D world)
+============================================================ */
+.recall-section { padding: 30px 0 110px; }
+.recall-inner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 72px;
+  align-items: center;
+}
+.recall-section .world-desc + .world-desc { margin-top: 14px; }
+.recall-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+.recall-src { display: inline-flex; align-items: center; gap: 8px; }
+.recall-preview { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+.phone-frame {
+  width: 300px;
+  aspect-ratio: 9 / 19.5;
+  padding: 10px;
+  border-radius: 44px;
+  background: #050507;
+  border: 1px solid rgba(129, 140, 248, 0.28);
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.5), 0 0 60px var(--accent-glow);
+}
+.phone-frame .world-iframe { border-radius: 34px; background: #fff; }
+.phone-caption {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--text-inv-3);
+  transition: var(--transition);
+}
+.phone-caption:hover { color: var(--accent-2); }
+
+@media (max-width: 900px) {
+  .recall-inner { grid-template-columns: 1fr; gap: 44px; }
+  .phone-frame { width: min(300px, 78vw); }
+}
